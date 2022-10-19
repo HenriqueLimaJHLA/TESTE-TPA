@@ -465,7 +465,6 @@ programa
 	{
 		se (I == 1){
 			escreva("Carregando:\n")
-			numero = 0
 			u.aguarde(450)
 			limpa()
 
@@ -485,7 +484,6 @@ programa
 		}
 		se (I == 2){
 			escreva("Loading:\n")
-			numero = 0
 			u.aguarde(450)
 			limpa()
 
@@ -733,6 +731,10 @@ programa
 			leia(x1)
 			
 			se(x1 == 1){
+                         escreva("Você escolheu continuar com o grupo A verdade Mentira")
+					u.aguarde(4000)
+					limpa()
+				
 					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
 					u.aguarde(5900)
 					limpa()
