@@ -733,6 +733,10 @@ programa
 			leia(x1)
 			
 			se(x1 == 1){
+			                escreva("Você escolheu continuar com o grupo A verdade Mentira")
+					u.aguarde(4000)
+					limpa()
+					
 					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
 					u.aguarde(5900)
 					limpa()
