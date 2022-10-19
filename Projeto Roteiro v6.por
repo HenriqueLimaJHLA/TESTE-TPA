@@ -8,7 +8,7 @@ programa
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
-	inteiro x1
+	inteiro x1, x2
 	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
@@ -730,6 +730,7 @@ programa
 			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
 			leia(x1)
 			limpa()
+			
 			se(x1 == 1){
                     escreva("Você escolheu continuar com o grupo A verdade Mentira...")
 					u.aguarde(4000)
@@ -743,59 +744,9 @@ programa
 					u.aguarde(5900)
 					limpa()
 					
-					escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
-					u.aguarde(5000)
-					limpa()
+					escolha2()
 					
-					escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
-					u.aguarde(5000)
-					limpa()
-					
-					escreva (nome_personagem," agora indignad",letraM," com o que aquela pessoa fazera, vai pedir explicações, então em sua defesa ",nome_vilao," fala:\n")
-					u.aguarde(6500)
-					limpa()
-					
-					escreva (nome_vilao,":\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
-					u.aguarde(6000)
-					
-					escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
-					u.aguarde(6000)
-					limpa()
-
-					escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
-					u.aguarde(7000)
-					limpa()
-					
-					escreva("Igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
-					u.aguarde(7000)
-					limpa()
-
-					escreva("No dia seguinte, chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo d",pronomeM," e as outras 5 pessoas planejando sobre a vacina, junto tem uma mensagem: \n\n")
-					u.aguarde(7000)
-					limpa()
-					
-					escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
-					u.aguarde(7000)
-					limpa()
-
-					escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
-					u.aguarde(8000)
-					limpa()
-
-					escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n") 
-					u.aguarde(4500)
-					limpa()
-					
-					escreva("em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
-					u.aguarde(4500)
-					limpa()
-
-					escreva("FIM...\n")
-					u.aguarde(2000)
-					limpa()
-					mostrar_Menu()
-					
-			
+						
 			}
 			se(x1 == 2){
 				escreva("Você não foi a reunião, ao ir a padaria, bateu o carro e morreu, fim")
@@ -820,13 +771,91 @@ programa
 	{
 		
 		se(I == 1){
+			escreva("Decidem ir num em um horário:\n[1]Dia\n[2]Noite\n")
+			leia(x2)
+			limpa()
 			
+			se(x2 == 1){
+				
+				escreva("Decidiram ir de dia:\n")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
+				u.aguarde(5000)
+				limpa()
+					
+				escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
+				u.aguarde(5000)
+				limpa()
+					
+				escreva (nome_personagem," agora indignad",letraM," com o que aquela pessoa fazera, vai pedir explicações, então em sua defesa ",nome_vilao," fala:\n")
+				u.aguarde(6500)
+				limpa()
+					
+				escreva (nome_vilao,":\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
+				u.aguarde(6000)
+					
+				escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
+				u.aguarde(6000)
+				limpa()
+
+				escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
+				u.aguarde(7000)
+				limpa()
+					
+				escreva("Igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("No dia seguinte, chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo d",pronomeM," e as outras 5 pessoas planejando sobre a vacina, junto tem uma mensagem: \n\n")
+				u.aguarde(7000)
+				limpa()
+					
+				escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
+				u.aguarde(8000)
+				limpa()
+
+				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n") 
+				u.aguarde(4500)
+				limpa()
+					
+				escreva("em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
+				u.aguarde(4500)
+				limpa()
+
+				escreva("FIM...\n")
+				u.aguarde(2000)
+				limpa()
+				mostrar_Menu()
+					
 			
+		
+			}
+			se(x2 == 2){
+				
+				escreva("Decidiram ir de noite:\n")
+				u.aguarde(2000)
+				limpa()
+				
+			}
 			
 		}
 		se(I == 2){
+			escreva()
+			leia(x2)
+			limpa()
 			
-			
+			se(x2 == 1){
+				
+			}
+			se(x2 == 2){
+				
+			}
 			
 		}
 	}
