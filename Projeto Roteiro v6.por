@@ -1,3 +1,4 @@
+
 programa
 {
 	inclua biblioteca Util --> u
@@ -7,7 +8,9 @@ programa
 	inteiro final, decisao
 	caracter reiniciar
 	cadeia nome_vilao
-	caracter sexo_personagem
+	inteiro direcao
+	inteiro x[	]
+	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
 	{
@@ -146,7 +149,93 @@ programa
 		}
 		
 	}
-	
+	funcao escolha1()
+	{
+		
+		se(I == 1){
+			
+			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
+			leia(x[0])
+			
+			se(x[0] == 1){
+					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
+					u.aguarde(5900)
+					limpa()
+					
+					escreva (nome_personagem," sem contar nada a sua família, segue o plano com mais 6 pessoas, ‘seus amigos’ cada um em seu carro.\n")
+					u.aguarde(5900)
+					limpa()
+					
+					escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
+					u.aguarde(5000)
+					limpa()
+					
+					escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
+					u.aguarde(5000)
+					limpa()
+					
+					escreva (nome_personagem," agora indignad",letraM," com o que aquela pessoa fazera, vai pedir explicações, então em sua defesa ",nome_vilao," fala:\n")
+					u.aguarde(6500)
+					limpa()
+					
+					escreva (nome_vilao,":\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
+					u.aguarde(6000)
+					
+					escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
+					u.aguarde(6000)
+					limpa()
+
+					escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
+					u.aguarde(7000)
+					limpa()
+					
+					escreva("Igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
+					u.aguarde(7000)
+					limpa()
+
+					escreva("No dia seguinte, chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo d",pronomeM," e as outras 5 pessoas planejando sobre a vacina, junto tem uma mensagem: \n\n")
+					u.aguarde(7000)
+					limpa()
+					
+					escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
+					u.aguarde(7000)
+					limpa()
+
+					escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
+					u.aguarde(8000)
+					limpa()
+
+					escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n") 
+					u.aguarde(4500)
+					limpa()
+					
+					escreva("em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
+					u.aguarde(4500)
+					limpa()
+
+					escreva("FIM...\n")
+					u.aguarde(2000)
+					limpa()
+					mostrar_Menu()
+					
+			
+			}
+			se(x[0] == 2){
+				escreva("Você não foi a reunião, ao ir a padaria, bateu o carro e morreu, fim")
+				u.aguarde(4000)
+				limpa()
+			}
+			
+		}
+		se(I == 2){
+			se(x[0] == 1){
+				
+			}
+			se(x[0] == 2){
+				
+			}
+		}
+	}
 	funcao mostrar_Historia()
 	{
 		//Historia em Portugues, depois da validação da idade
@@ -162,27 +251,35 @@ programa
 
 			continuar_Idade()
 
-			se(idade_personagem <= 80 e idade_personagem >= 20){
-				escreva("SEXO DA PERSONAGEM [F]-[M]: ")
-				leia(sexo_personagem)
+			se(idade_personagem <= 80 e idade_personagem >= 18){
+				escreva("COMO SE DIRECIONAR AO PERSONAGEM? \n[1]Ela\n[2]Ele\n[3]Elx\n")
+				leia(direcao)
 				limpa()
 					
-				se(sexo_personagem == 'F' ou sexo_personagem == 'f'){
+				se(direcao == 1){
 					
 					iniciar_Historia()
+					
+					
+					pronome="Ela"
+					pronomeM="ela"
+					letra="A"
+					letraM="a"
+					
+					
 					escreva("Olá ", nome_personagem, " seja bem-vindo a história!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 					
-					escreva (nome_personagem," era uma pessoa muito influente, por ser empresária vive numa das zona mais ricas de sua cidade, com sua familia, compondo dois filhos e sua esposa.\n")
+					escreva (nome_personagem," era uma pessoa muito influente, por ser empresári",letraM," vive numa das zona mais ricas de sua cidade, com sua familia, compondo dois filhos e sua esposa.\n")
 					u.aguarde(7500)
 					limpa()
 					
-					escreva ("O governo dizia que estávamos vivenciando uma pandemia, o surgimento de um novo vírus. Após 3 meses já haviam descoberto uma cura, através da vacina.\n")
+					escreva ("O governo dizia que estávamos vivenciando uma pandemia, o surgimento de um novo vírus. Após 3 meses já haviam descoberto uma cura,  da vacina.\n")
 					u.aguarde(7000)
 					limpa()
 					
-					escreva ("Mas a ",nome_personagem," não aceitava o fato de terem descoberto a cura em 90 dias, então ela e alguns amigos de um grupo na internet.\n")
+					escreva ("Mas ",letraM," ",nome_personagem," não aceitava o fato de terem descoberto a cura em 90 dias, então ",pronomeM," e alguns amigos de um grupo na internet.\n")
 					u.aguarde(7100)
 					limpa()
 					
@@ -194,70 +291,32 @@ programa
 					u.aguarde(5900)
 					limpa()
 					
-					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
-					u.aguarde(5900)
-					limpa()
+					escolha1()
 					
-					escreva (nome_personagem," sem contar nada a sua família, segue o plano com mais 6 pessoas, ‘seus amigos’ cada um em seu carro.\n")
-					u.aguarde(5900)
-					limpa()
-					
-					escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
-					escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
-					u.aguarde(10000)
-					limpa()
-					
-					escreva (nome_personagem," agora indignada com o que aquela mulher fazera, vai pedir explicações, então ela fala:\n")
-					u.aguarde(6500)
-					limpa()
-					
-					escreva ("Stefany:\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
-					escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
-					u.aguarde(12000)
-					limpa()
-
-					escreva("Todos vão para casa assustados, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
-					escreva("igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("No dia seguinte chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo dele e as outras 5 pessoas planejando o sobre a vacina, junto tem uma mensagem: \n\n")
-					escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("Com muito medo de publicarem, ela vai ao local, no qual a mesma mulher no qual matara o cientista e sua familia esta a espera dos outros 5 membros do antigo plano.")
-					u.aguarde(8000)
-					limpa()
-
-					escreva("Após ouvir o novo plano da mulher, são obrigados a encontrarem os outros 3 cientistas e o cara que liberou o uso da vacina,\n") 
-					escreva ("em uma semana no máximo, caso passe disso, ela iria publicar o vídeo.")
-					u.aguarde(9000)
-					limpa()
-
-					escreva("FIM...\n")
-					u.aguarde(2000)
-					limpa()
-					mostrar_Menu()
-					
-						
 				}
-				se(sexo_personagem == 'M' ou sexo_personagem == 'm'){
+				se(direcao == 2){
 					
 					iniciar_Historia()
+					
+					pronome="Ele"
+					pronomeM="ele"
+					letra="O"
+					letraM="o"
+					
+					
 					escreva("Olá ", nome_personagem, " seja bem-vindo a história!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 					
-					escreva (nome_personagem," era uma pessoa muito influente, por ser empresário vive numa das zona mais ricas de sua cidade, com sua familia, compondo dois filhos e sua esposa.\n")
+					escreva (nome_personagem," era uma pessoa muito influente, por ser empresári",letraM," vive numa das zona mais ricas de sua cidade, com sua familia, compondo dois filhos e sua esposa.\n")
 					u.aguarde(7500)
 					limpa()
 					
-					escreva ("O governo dizia que estávamos vivenciando uma pandemia, o surgimento de um novo vírus. Após 3 meses já haviam descoberto uma cura, através da vacina.\n")
+					escreva ("O governo dizia que estávamos vivenciando uma pandemia, o surgimento de um novo vírus. Após 3 meses já haviam descoberto uma cura,  da vacina.\n")
 					u.aguarde(7000)
 					limpa()
 					
-					escreva ("Mas o ",nome_personagem," não aceitava o fato de terem descoberto a cura em 90 dias, então ela e alguns amigos de um grupo na internet.\n")
+					escreva ("Mas ",letraM," ",nome_personagem," não aceitava o fato de terem descoberto a cura em 90 dias, então ",pronomeM," e alguns amigos de um grupo na internet.\n")
 					u.aguarde(7100)
 					limpa()
 					
@@ -269,55 +328,14 @@ programa
 					u.aguarde(5900)
 					limpa()
 					
-					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
-					u.aguarde(5900)
-					limpa()
 					
-					escreva (nome_personagem," sem contar nada a sua família, segue o plano com mais 6 pessoas, ‘seus amigos’ cada um em seu carro.\n")
-					u.aguarde(5900)
-					limpa()
+					escolha1()
 					
-					escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
-					escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
-					u.aguarde(10000)
-					limpa()
 					
-					escreva (nome_personagem," agora indignado com o que aquela mulher fazera, vai pedir explicações, então ela fala:\n")
-					u.aguarde(6500)
-					limpa()
-					
-					escreva ("Stefany:\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
-					escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
-					u.aguarde(12000)
-					limpa()
-
-					escreva("Todos vão para casa assustados, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
-					escreva("igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("No dia seguinte chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo dele e as outras 5 pessoas planejando o sobre a vacina, junto tem uma mensagem: \n\n")
-					escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("Com muito medo de publicarem, ele vai ao local, no qual a mesma mulher no qual matara o cientista e sua familia esta a espera dos outros 5 membros do antigo plano.")
-					u.aguarde(8000)
-					limpa()
-
-					escreva("Após ouvir o novo plano da mulher, são obrigados a encontrarem os outros 3 cientistas e o cara que liberou o uso da vacina,\n") 
-					escreva ("em uma semana no máximo, caso passe disso, ela iria publicar o vídeo.")
-					u.aguarde(9000)
-					limpa()
-					
-					escreva("FIM...")
-					u.aguarde(2000)
-					limpa()
-					mostrar_Menu()
 				}
 					
 			}
-				
+		
 		}
 		
 		//Historia em Ingles, depois da validação da idade 
@@ -332,15 +350,21 @@ programa
 
 			continuar_Idade()
 
-			se(idade_personagem <= 80 e idade_personagem >= 20){
-				escreva("GENRE OF MAIN CHARACTER: [W]-[M]: ")
-				leia(sexo_personagem)
+			se(idade_personagem <= 80 e idade_personagem >= 18){
+				escreva("HOW TO ADDRESS THE CHARACTER? \n[1]She\n[2]He\n[3]It\n")
+				leia(direcao)
 				limpa()
 					
-				se(sexo_personagem == 'W' ou sexo_personagem == 'w'){
+				se(direcao == 1){
 					
 					iniciar_Historia()
-					escreva("Hi ", nome_personagem, " welcome the history!!! \n\n")
+					
+					pronome="She"
+					pronomeM="she"
+					letra="A"
+					letraM="a"
+					
+					escreva("Hi ",nome_personagem, " welcome the history!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 
@@ -411,10 +435,16 @@ programa
 					mostrar_Menu()
 						
 				}
-				se(sexo_personagem == 'M' ou sexo_personagem == 'm'){
+				se(direcao == 2){
 			
 					
 					iniciar_Historia()
+					
+					pronome="He"
+					pronomeM="he"
+					letra="O"
+					letraM="o"
+					
 					escreva("Hi ", nome_personagem, " welcome the history!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
@@ -502,7 +532,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem < 20){
+			se (idade_personagem <18 ){
 				escreva(nome_personagem," é muito novo para continuar a história...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -515,7 +545,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem < 20){
+			se (idade_personagem < 18){
 				escreva(nome_personagem," is very young for continue history...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -786,14 +816,3 @@ programa
 	}
 		
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 25660; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
