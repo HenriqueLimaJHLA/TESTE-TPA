@@ -9,7 +9,7 @@ programa
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
-	inteiro x[	]
+	inteiro x1
 	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
@@ -155,9 +155,9 @@ programa
 		se(I == 1){
 			
 			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
-			leia(x[0])
+			leia(x1)
 			
-			se(x[0] == 1){
+			se(x1 == 1){
 					escreva ("Após descobrirem onde um desses cientistas morava, decidiram ir atrás dele. \n")
 					u.aguarde(5900)
 					limpa()
@@ -220,7 +220,7 @@ programa
 					
 			
 			}
-			se(x[0] == 2){
+			se(x1 == 2){
 				escreva("Você não foi a reunião, ao ir a padaria, bateu o carro e morreu, fim")
 				u.aguarde(4000)
 				limpa()
@@ -228,10 +228,10 @@ programa
 			
 		}
 		se(I == 2){
-			se(x[0] == 1){
+			se(x1 == 1){
 				
 			}
-			se(x[0] == 2){
+			se(x1 == 2){
 				
 			}
 		}
@@ -267,7 +267,7 @@ programa
 					letraM="a"
 					
 					
-					escreva("Olá ", nome_personagem, " seja bem-vindo a história!!! \n\n")
+					escreva("Olá ", nome_personagem, " seja bem-vind",letraM," a história!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 					
@@ -304,7 +304,7 @@ programa
 					letraM="o"
 					
 					
-					escreva("Olá ", nome_personagem, " seja bem-vindo a história!!! \n\n")
+					escreva("Olá ", nome_personagem, " seja bem-vind",letraM," a história!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 					
