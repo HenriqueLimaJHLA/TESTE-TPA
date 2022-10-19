@@ -165,7 +165,7 @@ programa
 			continuar_Idade()
 
 			se(idade_personagem <= 80 e idade_personagem >= 18){
-				escreva("COMO SE DIRECIONAR AO PERSONAGEM? \n[1]Ela\n[2]Ele\n[3]Elx\n")
+				escreva("COMO SE DIRECIONAR AO PERSONAGEM? \n[1]Ela\n[2]Ele\n")
 				leia(direcao)
 				limpa()
 					
@@ -264,7 +264,7 @@ programa
 			continuar_Idade()
 
 			se(idade_personagem <= 80 e idade_personagem >= 18){
-				escreva("HOW TO ADDRESS THE CHARACTER? \n[1]She\n[2]He\n[3]It\n")
+				escreva("HOW TO ADDRESS THE CHARACTER? \n[1]She\n[2]He\n")
 				leia(direcao)
 				limpa()
 					
@@ -729,9 +729,9 @@ programa
 			
 			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
 			leia(x1)
-			
+			limpa()
 			se(x1 == 1){
-                         escreva("Você escolheu continuar com o grupo A verdade Mentira")
+                    escreva("Você escolheu continuar com o grupo A verdade Mentira...")
 					u.aguarde(4000)
 					limpa()
 				
