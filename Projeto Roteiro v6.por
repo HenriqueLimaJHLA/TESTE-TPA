@@ -8,7 +8,7 @@ programa
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
-	inteiro x1, x2
+	inteiro x1, x2, x3
 	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
@@ -105,8 +105,57 @@ programa
 			mostrar_Finais()
 		}
 	}
-	
-	
+	funcao mostrar_Erro_Escolha1()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha1()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha1()
+		}
+	}
+	funcao mostrar_Erro_Escolha2()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha2()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha2()
+		}
+	}
+	funcao mostrar_Erro_Escolha3()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha3()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha3()
+		}
+	}
 	
 
 	funcao reiniciar_jogo()
@@ -277,6 +326,7 @@ programa
 					letra="A"
 					letraM="a"
 					
+					
 					escreva("Hi ",nome_personagem, " welcome the history!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
@@ -285,7 +335,7 @@ programa
 					u.aguarde(7500)
 					limpa()
 					
-					escreva ("The government said that we were experiencing a pandemic, the surgiment of a new virus. After 3 months a scientist be descovered the cure , trhough the vacine.\n")
+					escreva ("The government said that we were experiencing a pandemic, the surgiment of a new virus. After 3 months a scientist be descovered the cure, trhough the vacine.\n")
 					u.aguarde(7000)
 					limpa()
 					
@@ -293,7 +343,7 @@ programa
 					u.aguarde(7100)
 					limpa()
 					
-					escreva ("The name is 'the real lie', they decided to help for to find out if all that is true or no.\n")
+					escreva ("The name is 'the True lie', they decided to help for to find out if all that is true or no.\n")
 					u.aguarde(5900)
 					limpa()
 					
@@ -315,7 +365,8 @@ programa
 					letra="O"
 					letraM="o"
 					
-					escreva("Hi ", nome_personagem, " welcome the history!!! \n\n")
+					
+					escreva("Hi ",nome_personagem, " welcome the history!!! \n\n")
 					u.aguarde(3000)
 					limpa ()
 
@@ -323,7 +374,7 @@ programa
 					u.aguarde(7500)
 					limpa()
 					
-					escreva ("The government said that we were experiencing a pandemic, the surgiment of a new virus. After 3 months a scientist be descovered the cure , trhough the vacine.\n")
+					escreva ("The government said that we were experiencing a pandemic, the surgiment of a new virus. After 3 months a scientist be descovered the cure, trhough the vacine.\n")
 					u.aguarde(7000)
 					limpa()
 					
@@ -331,7 +382,7 @@ programa
 					u.aguarde(7100)
 					limpa()
 					
-					escreva ("The name is 'the real lie', they decided to help for to find out if all that is true or no.\n")
+					escreva ("The name is 'the True lie', they decided to help for to find out if all that is true or no.\n")
 					u.aguarde(5900)
 					limpa()
 					
@@ -339,51 +390,7 @@ programa
 					u.aguarde(5900)
 					limpa()
 					
-					escreva ("After finding out where one of these scientists lived, they decided to go after him.\n")
-					u.aguarde(5900)
-					limpa()
-					
-					escreva (nome_personagem," without telling your family anything, follow the plan with 6 other people, 'your friends', each in your car.\n")
-					u.aguarde(5900)
-					limpa()
-					
-					escreva("Arriving at this house, render the scientist and your family, and If one people in which help plano to plan, pull out a pistol of 9mm and shoot in direcition to scientist,\n") 
-					escreva("killing him, now all people are in shock, standing still not knowing what to do, and so then the woman killed the scientist family too.\n")
-					u.aguarde(10000)
-					limpa()
-					
-					escreva("Now ",nome_personagem," nervous with what that woman had done, will ask for explanations, so he say:\n")
-					u.aguarde(6500)
-					limpa()
-					
-					escreva("Stefany:\n\n-My husband and my  daughter died after take the vaccine, so I will take revenge of everyone who participated in the creation of the vaccine,\n") 			
-					escreva("and in case any of you tryed stoped me, yours family will be the next.\n")
-					u.aguarde(12000)
-					limpa()
-
-					escreva("Everyone goes home scared, and none of them called with a police, because conspiracy theories,\n") 
-					escreva("like theirs, of the vaccine, were being tried in court, reaching sentences of 30 years in prison.\n")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("In next day  a mensage arrive in cellphone ",nome_personagem," of anonymous number, the message is a video of his and another five pleople planning  about the vaccine, togheter with a message say:\n\n")
-					escreva("-If you don't go to localization, I posted this video.\n")
-					u.aguarde(14000)
-					limpa()
-
-					escreva("With so much fear to publish, he go to localization, in which the same woman who killed the scientist and his family is waiting for the other 5 members of the old plan.\n")
-					u.aguarde(8000)
-					limpa()
-
-					escreva("After all people listen a new plan of woman, they have obligation to find the others trhee scientist and the who released the vaccine.\n") 
-					escreva ("within a maximum of one week, case pass this, she posted the video.")
-					u.aguarde(9000)
-					limpa()
-				
-					escreva("END...\n")
-					u.aguarde(2000)
-					limpa()
-					mostrar_Menu()
+					escolha1()
 				}
 			}
 		}
@@ -396,7 +403,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem <18 ){
+			se (idade_personagem <= 18 ){
 				escreva(nome_personagem," é muito novo para continuar a história...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -409,7 +416,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem < 18){
+			se (idade_personagem <= 18){
 				escreva(nome_personagem," is very young for continue history...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -560,9 +567,9 @@ programa
 		mostrar_Menu()
 		
 	}
-
 	funcao nome_nos_finais ()
-	{	se (I == 1) {
+	{	
+		se (I == 1) {
 			escreva ("Digite o nome do seu personagem: ")
 			leia (nome_personagem)
 			limpa()
@@ -643,7 +650,7 @@ programa
 				u.aguarde(15000)
 				limpa ()
 				mostrar_Finais()
-			
+
 			}
 			se (final ==2){
 				nome_nos_finais()
@@ -706,9 +713,18 @@ programa
 						
 			}
 			se(x1 == 2){
-				escreva("Você não foi a reunião, ao ir a padaria, bateu o carro e morreu, fim")
+				escreva(nome_personagem,"não foi ao encontro com o grupo A verdade Mentira...")
 				u.aguarde(4000)
 				limpa()
+				
+				escreva("Ao ir a padaria, bateu o carro e morreu, fim")
+				u.aguarde(4000)
+				limpa()
+			}
+			senao{
+				
+				mostrar_Erro_Escolha1()
+				
 			}
 		}
 		se(I == 2){
@@ -734,8 +750,13 @@ programa
 					
 			}
 			se(x1 == 2){
+				escreva("fuck")
 				
 				
+			}
+			senao{
+				
+				mostrar_Erro_Escolha1()
 				
 			}
 		}
@@ -744,7 +765,7 @@ programa
 	{
 		
 		se(I == 1){
-			escreva("Decidem ir num em um horário:\n[1]Dia\n[2]Noite\n")
+			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
 			leia(x2)
 			limpa()
 			
@@ -754,60 +775,25 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola de 9mm e atira em direção ao cientista,\n") 
+				escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola e atira em direção ao cientista,\n") 
 				u.aguarde(5000)
 				limpa()
 					
-				escreva("matando-o, todos agora em choque, ficam parados sem saber o que fazer, e assim então a mulher finaliza também a família.\n")
+				escreva("Acertando-o. Agora todos em choque, se tornam imóveis e sem saber o que fazer")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("Assim ",nome_vilao," finaliza o cientista e sua família em uma rajada apenas\n")
 				u.aguarde(5000)
 				limpa()
 					
-				escreva (nome_personagem," agora indignad",letraM," com o que aquela pessoa fazera, vai pedir explicações, então em sua defesa ",nome_vilao," fala:\n")
-				u.aguarde(6500)
+				escreva(nome_vilao," está recarregando a arma")
+				u.aguarde(3000)
 				limpa()
-					
-				escreva (nome_vilao,":\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina,\n") 			
-				u.aguarde(6000)
-					
-				escreva("e caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
-				u.aguarde(6000)
-				limpa()
-
-				escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
-				u.aguarde(7000)
-				limpa()
-					
-				escreva("Igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("No dia seguinte, chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo d",pronomeM," e as outras 5 pessoas planejando sobre a vacina, junto tem uma mensagem: \n\n")
-				u.aguarde(7000)
-				limpa()
-					
-				escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
-				u.aguarde(8000)
-				limpa()
-
-				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n") 
-				u.aguarde(4500)
-				limpa()
-					
-				escreva("em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
-				u.aguarde(4500)
-				limpa()
-
-				escreva("FIM...\n")
-				u.aguarde(2000)
-				limpa()
-				mostrar_Menu()
-					
-			
-		
+				
+				escolha3()
+				
+				
 			}
 			se(x2 == 2){
 				
@@ -816,10 +802,15 @@ programa
 				limpa()
 				
 			}
+			senao{
+				
+				mostrar_Erro_Escolha2()
+				
+			}
 			
 		}
 		se(I == 2){
-			escreva()
+			escreva("Decide to go at a time:\n[1]Day\n[2]Night\n")
 			leia(x2)
 			limpa()
 			
@@ -889,19 +880,101 @@ programa
 				limpa()
 				
 			}
-			
+			senao{
+				
+				mostrar_Erro_Escolha2()
+				
+			}
 		}
 	}
 	funcao escolha3()
 	{
 		
 		se(I == 1){
+			escreva(nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
+			leia(x3)
+			limpa()
+			
+			se(x3 == 1){
+				escreva("Você decidiu reagir...")
+				u.aguarde(3000)
+				limpa()
+				
+				
+			}
+			se(x3 == 2){
+				
+				escreva(nome_personagem," ficou em silêncio...")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva ("Então ",nome_vilao," fala:\n\n -Meu marido e minha filha faleceram após tomarem a vacina, então vou me vingar de cada um que teve participação na criação da vacina\n") 			
+				u.aguarde(6000)
+					
+				escreva("E caso algum de vocês tente me impedir, a família de vocês serão as próximas.  ")
+				u.aguarde(6000)
+				limpa()
+			
+				escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
+				u.aguarde(7000)
+				limpa()
+					
+				escreva("Igual a deles, da vacina, estavam sendo julgadas no tribunal, chegando a penas de 30 anos na penitenciária. ")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("No dia seguinte, chega uma mensagem no celular de ",nome_personagem, " de um número desconhecido, era um vídeo d",pronomeM," e as outras 5 pessoas planejando sobre a vacina, junto tem uma mensagem: \n\n")
+				u.aguarde(7000)
+				limpa()
+					
+				escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
+				u.aguarde(8000)
+				limpa()
+	
+				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n")
+				u.aguarde(4500)
+				limpa()
+					
+				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
+				u.aguarde(4500)
+				limpa()
+				
+				escreva("FIM...\n")
+				u.aguarde(2000)
+				limpa()
+				mostrar_Menu()
+				
+			}
+			
+			
+		}
+		se(I == 2){
+			
+			se(x3 == 1){
+				
+				
+			}
+			se(x3 == 2){
+				
+				
+			}
+		}
+		
+	}
+	funcao escolha4()
+	{
+		
+		se(I == 1){
+			
 			
 		}
 		se(I == 2){
 			
 		}
-		
 	}
 	
 	
