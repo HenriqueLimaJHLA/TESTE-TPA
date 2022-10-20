@@ -8,7 +8,7 @@ programa
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
-	inteiro x1, x2, x3
+	inteiro x1, x2, x3, x4, x5
 	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
@@ -154,6 +154,40 @@ programa
 			escreva("\tRewrite number please: \n\n")
 			u.aguarde(1000)
 			escolha3()
+		}
+	}
+	funcao mostrar_Erro_Escolha4()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha4()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha4()
+		}
+	}
+	funcao mostrar_Erro_Escolha5()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha5()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha5()
 		}
 	}
 	
@@ -598,12 +632,12 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a mulher, e ",nome_personagem," e as outras pessoas indo acompanha-la,\n")
-				escreva ("caso desse algo errado ",nome_personagem," entra na frente no momento no qual a mulher vai mata-lo, e pedi para explicar sobre a vacina, o homem reconhece a mulher do jornal, \n")
-				escreva("no qual sua família foi uma das primeiras a testarem a vacina, e conta q não morreram por causa da vacina e sim por alguma outra doença, e mostra em seu PC,\n")
-				escreva("a mulher muito mal por ter matado o outro cientista e sua família por nada, decide se matar, ela morre,\n") 
-				escreva(nome_personagem," explica tudo que aconteceu, o homem entendendo o lado de " ,nome_personagem," deixa eles irem embora e conta a polícia uma outra história, no qual só a mulher participava.\n")
-				escreva("Então ",nome_personagem," volta para sua família e vive felizes para sempre :)")
+				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam ",letraM," ",nome_vilao,", e ",nome_personagem," e o resto do grupo vai acompanha-l",letraM,",\n")
+				escreva ("caso desse algo errado. Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', e pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
+				escreva("no qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
+				escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
+				escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
+				escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
 				u.aguarde(15000)
 				limpa ()
 				mostrar_Finais()
@@ -948,25 +982,9 @@ programa
 				escreva(" -Caso não compareça ao local, publicarei esse vídeo.")
 				u.aguarde(7000)
 				limpa()
-
-				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
-				u.aguarde(8000)
-				limpa()
-	
-				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n")
-				u.aguarde(4500)
-				limpa()
-					
-				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
-				u.aguarde(4500)
-				limpa()
-
+				
 				escolha4()
 				
-				escreva("FIM...\n")
-				u.aguarde(2000)
-				limpa()
-				mostrar_Menu()
 				
 			}
 			senao
@@ -979,15 +997,15 @@ programa
 		se(I == 2){
 			
 			se(x3 == 1){
+								
 				
 				
 			}
 			se(x3 == 2){
-				
+
 				
 			}
-			senao
-			{
+			senao{
 				mostrar_Erro_Escolha3()
 			}
 		}
@@ -997,13 +1015,173 @@ programa
 	{
 		
 		se(I == 1){
-				
+			escreva(nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
+			leia(x4)
+			limpa()
 			
+			se(x4 == 1){
+								
+				escreva(nome_personagem," foi a esta provável última reunião...")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
+				u.aguarde(8000)
+				limpa()
+	
+				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n")
+				u.aguarde(4500)
+				limpa()
+					
+				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo da mesma forma.")
+				u.aguarde(4500)
+				limpa()
+				
+				finais_Fim()
+				
+				
+			}
+			se(x4 == 2){
+								
+				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
+				u.aguarde(3000)
+				limpa()
+			}
+			senao{
+				
+				mostrar_Erro_Escolha4()
+			}
 		}
 		se(I == 2){
 			
+			se(x4 == 1){
+				
+			}
+			se(x5 == 2){
+				
+			}
+			senao{
+				
+				mostrar_Erro_Escolha4()
+			}
 		}
 	}
+	funcao escolha5()
+	{
 	
-	
+		se(I == 1){
+			
+			se(x5 == 1){
+				
+			}
+			se(x5 == 2){
+				
+			}
+			senao{
+				
+				mostrar_Erro_Escolha5()
+			}
+		}
+		se(I == 2){
+			
+			se(x5 == 1){
+				
+			}
+			se(x5 == 2){
+				
+			}
+			senao{
+				
+				mostrar_Erro_Escolha5()
+			}
+		}
+	}
+
+	funcao finais_Fim()
+	{
+		se(x1 == 1 e x2 == 2 e x3 == 1 e x4 == 2){
+			
+			
+		}
+		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 1){
+			
+			
+		}
+		se(x1 == 1 e x2 == 1 e x3 == 2 e x4 == 2){
+			
+			
+		}
+		se(x1 == 2 e x2 == 2 e x3 == 1 e x4 == 1){
+			
+			
+		}
+		
+		
+		se(x1 == 1 e x2 == 1 e x3 == 1 e x4 == 2){
+			
+			
+		}
+		se(x1 == 1 e x2 == 1 e x3 == 2 e x4 == 1){
+			
+			
+		}
+		se(x1 == 1 e x2 == 2 e x3 == 1 e x4 == 1){
+			
+			
+		}
+		se(x1 == 2 e x2 == 1 e x3 == 1 e x4 == 1){
+			
+			
+		}
+		
+		se(x1 == 2 e x2 == 2 e x3 == 2 e x4 == 1){
+			
+			
+		}
+		se(x1 == 2 e x2 == 2 e x3 == 1 e x4 == 2){
+			
+			
+		}
+		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 2){
+			
+			
+		}
+		se(x1 == 1 e x2 == 2 e x3 == 2 e x4 == 2){
+			
+			
+		}
+	}
+	funcao final_escrito1()
+	{
+		escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
+		escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
+		escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
+		escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
+		escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
+		escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
+		u.aguarde(15000)
+		limpa ()
+		
+		mostrar_Menu()
+	}
+	funcao final_escrito2()
+	{
+		escreva ("Assim, passando mais de uma semana e encontram apenas os cientistas e não o liberador da vacina, a ",nome_vilao," decide primeiro matar a família de ",nome_personagem," e deixa-lo ver,\n") 
+		escreva("e depois ",nome_vilao," mata ele.")
+		u.aguarde(7000)
+		limpa ()
+		
+		mostrar_Menu()
+	}
+	funcao final_escrito3()
+	{
+		escreva("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho dos cientistas, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
+		escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedi para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
+		escreva("mas o número é bem baixo se ver o lado de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, assim acabando que ninguém saiu vivo de lá.")
+		u.aguarde(15000)
+		limpa ()
+		
+		mostrar_Menu()
+	}
+
 }
