@@ -807,7 +807,7 @@ programa
 				u.aguarde(3000)
 				limpa()
 
-				escreva("O grupo foi descoberto pelo ",nome_vilao," então ele prendeu o grupo A Verdade mentira em uma cova com leões,e todos foram devorados" )
+				escreva("O grupo foi descoberto pelo ",nome_vilao,", então ele prendeu o grupo A Verdade mentira em uma cova com leões,e todos foram devorados" )
 				u.aguarde(9000)
 				limpa()
 				
