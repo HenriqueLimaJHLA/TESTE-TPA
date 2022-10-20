@@ -403,7 +403,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem <= 18 ){
+			se (idade_personagem < 18 ){
 				escreva(nome_personagem," é muito novo para continuar a história...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -416,7 +416,7 @@ programa
 				u.aguarde(400)
 				reiniciar_jogo()
 			}
-			se (idade_personagem <= 18){
+			se (idade_personagem < 18){
 				escreva(nome_personagem," is very young for continue history...\n\n")
 				u.aguarde(400)
 				reiniciar_jogo()
@@ -429,6 +429,7 @@ programa
 	{
 		se (I == 1){
 			escreva("Carregando:\n")
+			numero=0
 			u.aguarde(450)
 			limpa()
 
@@ -448,6 +449,7 @@ programa
 		}
 		se (I == 2){
 			escreva("Loading:\n")
+			numero=0
 			u.aguarde(450)
 			limpa()
 
@@ -902,7 +904,7 @@ programa
 				
 				
 			}
-			se(x3 == 2){
+			se(x3 == 2){ 
 				
 				escreva(nome_personagem," ficou em silêncio...")
 				u.aguarde(3000)
@@ -949,6 +951,10 @@ programa
 				mostrar_Menu()
 				
 			}
+			senao
+			{
+				mostrar_Erro_Escolha3()
+			}
 			
 			
 		}
@@ -962,6 +968,10 @@ programa
 				
 				
 			}
+			senao
+			{
+				mostrar_Erro_Escolha3()
+			}
 		}
 		
 	}
@@ -969,7 +979,7 @@ programa
 	{
 		
 		se(I == 1){
-			
+				
 			
 		}
 		se(I == 2){
@@ -978,4 +988,4 @@ programa
 	}
 	
 	
-}cu
+}
