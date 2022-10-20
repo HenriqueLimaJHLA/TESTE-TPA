@@ -180,14 +180,14 @@ programa
 			u.aguarde(1000)
 			escreva("\tReescreva o número por favor: \n\n")
 			u.aguarde(1000)
-			escolha5()
+			
 		}
 		se (I == 2){
 			escreva("\tNumber don't Identified \n")
 			u.aguarde(1000)
 			escreva("\tRewrite number please: \n\n")
 			u.aguarde(1000)
-			escolha5()
+			
 		}
 	}
 	
@@ -834,8 +834,8 @@ programa
 				u.aguarde(3000)
 				limpa()
 
-				escreva("O grupo foi descoberto pelo ",nome_vilao,", então ele prendeu o grupo A Verdade mentira em uma cova com leões,e todos foram devorados" )
-				u.aguarde(9000)
+				escreva("O grupo foi descoberto pelo ",nome_vilao,", então ele prendeu o grupo A Verdade mentira " )
+				u.aguarde(7000)
 				limpa()
 				
 			}
@@ -887,7 +887,7 @@ programa
 				u.aguarde(3000)
 				limpa()
 
-				escreva("The group was discovered by ",nome_vilao," so he trapped the group The Truth Lies in a den with lions, and they were all devoured." )
+				escreva("The group was discovered by ",nome_vilao," so he arrested the group The Truth lie." )
 				u.aguarde(9000)
 				limpa()
 				
@@ -909,6 +909,10 @@ programa
 			
 			se(x3 == 1){
 				escreva("Você decidiu reagir...")
+				u.aguarde(3000)
+				limpa()
+
+				escreva("E o ",nome_vilao," não pensou duas e vezas e com um tiro matou ",nome_personagem,"...")
 				u.aguarde(3000)
 				limpa()
 				
@@ -1004,7 +1008,7 @@ programa
 				mostrar_Erro_Escolha3()
 			}
 		}
-		
+		          
 	}
 	funcao escolha4()
 	{
@@ -1052,45 +1056,51 @@ programa
 			se(x4 == 1){
 				
 			}
-			se(x5 == 2){
+			se(x4 == 2){
 				
 			}
 			senao{
 				
 				mostrar_Erro_Escolha4()
 			}
+			
+			
 		}
-	}
-	funcao escolha5()
-	{
+		     se(I == 1){
+	               escreva(nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
+			     leia(x4)
+		          limpa()
+
+			se(x4 == 1){
+			
+
+
+			      escreva(nome_personagem," went to this likely last meeting...")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("Too scared to publish, ",pronomeM," go to the place where ",nome_vilao," ",letraM,"expected")
+				u.aguarde(8000)
+				limpa()
 	
-		se(I == 1){
+				escreva("After hearing a new plan, ",pronomeM,"s are forced to find the other 3 scientists and the man who authorized the use of the vaccine,\n")
+				u.aguarde(4500)
+				limpa()
+					
+				escreva("In a week at the most, if it went beyond that, ",nome_vilao," would post the video in the same way.")
+				u.aguarde(4500)
+				limpa()
+			}
+
+
+
+
+
+
 			
-			se(x5 == 1){
-				
 			}
-			se(x5 == 2){
-				
-			}
-			senao{
-				
-				mostrar_Erro_Escolha5()
-			}
-		}
-		se(I == 2){
-			
-			se(x5 == 1){
-				
-			}
-			se(x5 == 2){
-				
-			}
-			senao{
-				
-				mostrar_Erro_Escolha5()
-			}
-		}
 	}
+	                       
 
 	funcao finais_Fim()
 	{
