@@ -857,59 +857,26 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Arriving at this house, render the scientist and your family, and If one people in which help plano to plan, pull out a pistol of 9mm and shoot in direcition to scientist,\n") 
+				escreva("Arriving at this house, the scientist and his family surrender, and one of the people he helped to plan the plan, pulls out a pistol and shoots towards the scientist,\n")
 				u.aguarde(5000)
 				limpa()
 				
-				escreva("killing him, now all people are in shock, standing still not knowing what to do, and so then the woman killed the scientist family too.\n")
+				escreva("Hitting him. Now everyone in shock, becomes immobile and not knowing what to do")
+				u.aguarde(3000)
+				limpa()
+				
+				
+				escreva("Thus ",nome_vilao," finishes the scientist and his family in a single burst\n")
 				u.aguarde(5000)
 				limpa()
 					
-				escreva("Now ",nome_personagem," nervous with what that woman had done, will ask for explanations, so she say:\n")
-				u.aguarde(6500)
+				escreva(nome_vilao," is reloading weapon")
+				u.aguarde(3000)
 				limpa()
+				
+				escolha3()
+				
 					
-				escreva("Stefany:\n\n-My husband and my  daughter died after take the vaccine, so I will take revenge of everyone who participated in the creation of the vaccine,\n") 			
-				u.aguarde(6000)
-				limpa()
-				
-				escreva("and in case any of you tryed stoped me, yours family will be the next.\n")
-				u.aguarde(6000)
-				limpa()
-
-				escreva("Everyone goes home scared, and none of them called with a police, because conspiracy theories,\n") 
-				u.aguarde(7000)
-				limpa()
-				
-				escreva("like theirs, of the vaccine, were being tried in court, reaching sentences of 30 years in prison.\n")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("In next day  a mensage arrive in cellphone ",nome_personagem," of anonymous number, the message is a video of her and another five pleople planning  about the vaccine, togheter with a message say:\n\n")
-				u.aguarde(7000)
-				limpa()
-				
-				escreva("-If you don't go to localization, I posted this video.\n")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("With so much fear to publish, she go to localization, in which the same woman who killed the scientist and his family is waiting for the other 5 members of the old plan.\n")
-				u.aguarde(8000)
-				limpa()
-
-				escreva("After all people listen a new plan of woman, they have obligation to find the others trhee scientist and the who released the vaccine.\n") 
-				u.aguarde(4500)
-				limpa()
-				
-				escreva ("within a maximum of one week, case pass this, she posted the video.")
-				u.aguarde(4500)
-				limpa()
-					
-				escreva ("END...\n")	
-				u.aguarde(2000)
-				limpa()
-				mostrar_Menu()
-				
 			}
 			se(x2 == 2){
 				escreva("Decided to go during at night:\n")
@@ -990,7 +957,42 @@ programa
 		se(I == 2){
 			
 			se(x3 == 1){
-								
+				escreva("and in case any of you tryed stoped me, yours family will be the next.\n")
+				u.aguarde(6000)
+				limpa()
+
+				escreva("Everyone goes home scared, and none of them called with a police, because conspiracy theories,\n") 
+				u.aguarde(7000)
+				limpa()
+				
+				escreva("like theirs, of the vaccine, were being tried in court, reaching sentences of 30 years in prison.\n")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("In next day  a mensage arrive in cellphone ",nome_personagem," of anonymous number, the message is a video of her and another five pleople planning  about the vaccine, togheter with a message say:\n\n")
+				u.aguarde(7000)
+				limpa()
+				
+				escreva("-If you don't go to localization, I posted this video.\n")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("With so much fear to publish, she go to localization, in which the same woman who killed the scientist and his family is waiting for the other 5 members of the old plan.\n")
+				u.aguarde(8000)
+				limpa()
+
+				escreva("After all people listen a new plan of woman, they have obligation to find the others trhee scientist and the who released the vaccine.\n") 
+				u.aguarde(4500)
+				limpa()
+				
+				escreva ("within a maximum of one week, case pass this, she posted the video.")
+				u.aguarde(4500)
+				limpa()
+					
+				escreva ("END...\n")	
+				u.aguarde(2000)
+				limpa()
+				mostrar_Menu()
 				
 				
 			}
