@@ -606,17 +606,21 @@ programa
 	funcao nome_nos_finais ()
 	{	
 		se (I == 1) {
-			escreva ("Digite o nome do seu personagem: ")
+			escreva ("Digite o nome do personagem principal: ")
 			leia (nome_personagem)
+			escreva("\nDigite o nome do vilão: ")
+			leia(nome_vilao)
 			limpa()
 			u.aguarde(1000)
-	}
+		}
 		se (I == 2){
-			escreva ("Write name of your character: ")
+			escreva ("Enter the name of the main character: ")
 			leia (nome_personagem)
+			escreva("\nEnter the villain's name: ")
+			leia(nome_vilao)
 			limpa()
 			u.aguarde(1000)	
-			}
+		}
 	}
 	
 	//Todos os Finais
@@ -632,9 +636,9 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam ",letraM," ",nome_vilao,", e ",nome_personagem," e o resto do grupo vai acompanha-l",letraM,",\n")
-				escreva ("caso desse algo errado. Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', e pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
-				escreva("no qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
+				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
+				escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
+				escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
 				escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
 				escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
 				escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
@@ -646,8 +650,8 @@ programa
 			se (final ==2){
 				nome_nos_finais()
 				
-				escreva ("Assim, passando mais de uma semana e encontram apenas os cientistas e não o liberador da vacina, a mulher decide primeiro matar a família de ",nome_personagem," e deixa-lo ver,\n") 
-				escreva("e depois ela mata ele.")
+				escreva ("Assim, passando mais de uma semana e encontram apenas os cientistas e não o liberador da vacina, a ",nome_vilao," decide primeiro matar a família de ",nome_personagem," e deixa-lo ver,\n") 
+				escreva("e depois ",nome_vilao," mata ele.")
 				u.aguarde(7000)
 				limpa ()
 				mostrar_Finais()
@@ -655,9 +659,9 @@ programa
 			se (final==3){
 				nome_nos_finais()
 				
-				escreva("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho dos cientistas, assim contam a mulher, e ",nome_personagem," e as outras pessoas indo acompanha-la, caso desse algo errado \n")
+				escreva("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho dos cientistas, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
 				escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedi para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
-				escreva("mas o número é bem baixo se ver o lado de pessoas que estão sendo protegidas ou curadas desse novo vírus, a mulher entendendo que fez tudo isso por nada, começa a atirar em todos na sala, assim ninguém saindo vivo de la.")
+				escreva("mas o número é bem baixo se ver o lado de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, assim acabando que ninguém saiu vivo de lá.")
 				u.aguarde(15000)
 				limpa ()
 				mostrar_Finais()
@@ -677,32 +681,21 @@ programa
 				
 			se (final ==1) {
 				nome_nos_finais()
-				escreva("So, after finding everyone, they have a way to ambush the vaccine deliverer's job, as well as the woman, and ",nome_personagem," and the people going to accompany her,\n")
-				escreva("in case something goes wrong ",nome_personagem," enters the front at the moment when the woman is going to kill him, and I asked to explain about the vaccine, the man recognizes the woman from the newspaper,\n")
-				escreva("in which his family was one of the first to test the vaccine, and he says that they did not die because of the vaccine, but because of some other disease, and he shows on his PC,\n")
-				escreva("the woman very badly for having killed the other scientist and his family for nothing, decides to kill herself, she dies,\n")
-				escreva(nome_personagem," explains everything that happened, the man understanding the side of ",nome_personagem," lets them go and tells the police another story, in which only the woman participated.\n")
-				escreva("So ",nome_personagem," goes back to his family and lives happily ever after :)\n")
-				u.aguarde(15000)
-				limpa ()
+				
+				
 				mostrar_Finais()
 
 			}
 			se (final ==2){
 				nome_nos_finais()
-				escreva ("So, after more than a week passes and they find only the scientists and not the vaccine releaser, the woman decides to first kill the family of ",nome_personagem," and let him see,\n")
-				escreva ("and then she kills him.\n")
-				u.aguarde(7000)
-				limpa ()
+				
+				
 				mostrar_Finais()
 			}
 			se (final==3){
 				nome_nos_finais()
-				escreva("So, after finding everyone, they find a way to ambush the scientists' work, so they tell the woman, and ",nome_personagem," and the other people going to accompany her, in case something goes wrong\n")
-				escreva(nome_personagem," enters the front at the moment when the woman is going to kill them, and I asked to explain about the vaccine, they explain that the vaccine is protecting from a real virus, and that they discovered that some people have complications,\n")
-				escreva("but the number is very low if you look at the side of people who are being protected or cured from this new virus, the woman understanding that she did all this for nothing, starts shooting at everyone in the room, so no one gets out of her alive.\n")
-				u.aguarde(15000)
-				limpa ()
+				
+				
 				mostrar_Finais()
 			}
 			se (final ==4){
