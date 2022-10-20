@@ -802,6 +802,14 @@ programa
 				escreva("Decidiram ir de noite:\n")
 				u.aguarde(2000)
 				limpa()
+
+				escreva("Chegaram na casa e invadiram mais ")
+				u.aguarde(3000)
+				limpa()
+
+				escreva("O grupo foi descoberto pelo ",nome_vilao," então ele prendeu o grupo A Verdade mentira em uma cova com leões,e todos foram devorados" )
+				u.aguarde(9000)
+				limpa()
 				
 			}
 			senao{
