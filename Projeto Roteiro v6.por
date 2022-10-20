@@ -715,7 +715,7 @@ programa
 						
 			}
 			se(x1 == 2){
-				escreva(nome_personagem,"não foi ao encontro com o grupo A verdade Mentira...")
+				escreva(nome_personagem," não foi ao encontro com o grupo A verdade Mentira...")
 				u.aguarde(4000)
 				limpa()
 				
@@ -944,6 +944,8 @@ programa
 				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo.")
 				u.aguarde(4500)
 				limpa()
+
+				escolha4()
 				
 				escreva("FIM...\n")
 				u.aguarde(2000)
