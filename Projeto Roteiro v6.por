@@ -1289,34 +1289,35 @@ programa
 			escreva("As escolhas feitas por você foram:\n\n")
 			u.aguarde(3000)
 			
-			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
+			escreva("1-) ",nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
 			u.aguarde(1000)
 			escreva("Escolha feita: ",x1)
 			u.aguarde(2000)
 			
-			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
+			escreva("\n\n2-) Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
 			u.aguarde(1000)
 			escreva("Escolha feita: ",x2)
 			u.aguarde(2000)
 			
-			escreva("Você acertou senha...\n")
+			escreva("\n\nVocê acertou senha...\n")
 			u.aguarde(1000)
 			escreva("Senha: ",senha)
 			u.aguarde(2000)
 			
-			escreva(nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
+			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
 			u.aguarde(1000)
 			escreva("Escolha feitas: ",x3)
 			u.aguarde(2000)
 			
-			escreva(nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
+			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
 			u.aguarde(1000)
 			escreva("Escolha feita: ",x4)
-			u.aguarde(2000)
+			u.aguarde(6000)
 			
 			
-			escreva("Obrigado por jogar <3<3<3")
-			u.aguarde(300)
+			escreva("\n\n\nObrigado por jogar <3<3<3")
+			u.aguarde(15000)
+			limpa()
 			escolher_Idioma()
 		}
 		se(I == 2){
