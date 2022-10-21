@@ -934,9 +934,42 @@ programa
 	              escreva("You have ",tempo," seconds to crack the riddle, before the alarm rings...")
 		      u.aguarde(8000)
 		      limpa()
-		
+	              
+	              
+		      enquanto(tempo != -1){
+				escreva("",tempo,"\nWhen I was 30, my sister was half my age. Now that I'm 55, how old is my sister?\n")
+				u.aguarde(1000)
+				limpa()
+				tempo--
+		      }
+		      escreva("What is the password?\nTwo digits: ")
+		      leia(senha)
+		      se(senha == senhaOriginal){
+				escreva("\nAll the doors have opened")
+				u.aguarde(2000)
+				limpa()
+
+                                escreva("So ", pronomeM," start getting ready to get out of there...")
+				u.aguarde(3000)
+				limpa()
+				
+				escolha3()
+			}
+			se(senha != senhaOriginal){
+				escreva("The alarm rang!!!")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva(""Then they called the police, and all the members of the group were arrested...")
+				u.aguarde(3000)
+				limpa()
+				
+				game_over()
+				
+			}
+		      }
+				
 		}
-		
 		
 	}
 	funcao escolha2()
