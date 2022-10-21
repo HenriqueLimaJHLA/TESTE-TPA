@@ -1149,7 +1149,7 @@ programa
 				u.aguarde(7000)
 				limpa()
 
-				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n\ n")u.aguarde(7000)
+				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n\n")u.aguarde(7000)
 				u.aguarde(7000)
 				limpa()
 
