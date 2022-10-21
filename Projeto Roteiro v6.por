@@ -960,7 +960,7 @@ programa
 				u.aguarde(3000)
 				limpa()
 				
-				escreva(""Then they called the police, and all the members of the group were arrested...")
+				escreva("Then they called the police, and all the members of the group were arrested...")
 				u.aguarde(3000)
 				limpa()
 				
