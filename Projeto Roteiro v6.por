@@ -870,7 +870,7 @@ programa
 			}
 		}
 	}
-	funcao senha()
+	funcao senha_charada()
 	{
 		inteiro tempo = 30
 		inteiro senhaOriginal
@@ -977,7 +977,7 @@ programa
 				u.aguarde(5000)
 				limpa()
 				
-				senha()
+				senha_charada()
 				
 				escreva(nome_vilao," então recarrega sua arma")
 				u.aguarde(3000)
