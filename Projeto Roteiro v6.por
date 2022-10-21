@@ -926,6 +926,14 @@ programa
 				game_over()
 				
 			}
+                 se(I == 2){
+		      escreva("The house went into safe mode and closed all doors and windows")
+		      u.aguarde(7000)
+		      limpa()
+				
+	              escreva("You have ",tempo," seconds to crack the riddle, before the alarm rings...")
+		      u.aguarde(8000)
+		      limpa()
 		
 		}
 		
