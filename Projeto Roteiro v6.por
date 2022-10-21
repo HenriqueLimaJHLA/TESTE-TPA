@@ -804,7 +804,7 @@ programa
 			limpa()
 			
 			se(x1 == 1){
-                escreva("Você escolheu ir ao encontro do grupo A verdade Mentira...")
+                escreva("Você escolheu ir ao encontro do grupo A Verdadeira Mentira...")
 				u.aguarde(4000)
 				limpa()
 				
