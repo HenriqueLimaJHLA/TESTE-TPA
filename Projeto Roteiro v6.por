@@ -10,6 +10,7 @@ programa
 	inteiro direcao
 	inteiro x1, x2, x3, x4, x5
 	cadeia pronome, pronomeM, letra, letraM
+	inteiro senha
 		
 	funcao inicio()
 	{
@@ -872,8 +873,10 @@ programa
 	funcao senha()
 	{
 		inteiro tempo = 30
-		inteiro senhaOriginal = 40
-		inteiro senha
+		inteiro senhaOriginal
+		inteiro idade = 50
+		
+		senhaOriginal= idade - 15
 		
 		se(I == 1){
 			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
@@ -885,19 +888,34 @@ programa
 			limpa()
 			
 			enquanto(tempo != -1){
-				escreva("          ",tempo,"\nQuando eu tinha 30 anos, a minha irmã tinha a metade da minha idade. Agora que tenho 55 anos, com quantos anos minha irmã está?\n")
+				escreva("",tempo,"\nQuando eu tinha ",idade," anos, a minha irmã tinha a metade da minha idade. Agora que tenho 50 anos, com quantos anos minha irmã está?\n")
 				u.aguarde(1000)
 				limpa()
 				tempo--
 			
-		}
+			}
+			escreva("Qual é a senha?\nDois dígitos: ")
 			leia(senha)
 			se(senha == senhaOriginal){
-				escreva("Foram liberad",letraM,"s")
+				escreva("\nTodas as portas se abriram")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Então ",pronomeM," começam a se arrumar para sairem dali....")
+				u.aguarde(3000)
+				limpa()
+				
 				escolha3()
 			}
 			se(senha != senhaOriginal){
-				escreva("O alarme chamou a polícia, todos os integrantes do grupo foram presos...")
+				escreva("O alarme disparou!!!")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("Então chamaram a polícia, e todos os integrantes do grupo foram presos...")
+				u.aguarde(3000)
+				limpa()
+				
 				game_over()
 				
 			}
@@ -912,7 +930,7 @@ programa
 		se(I == 1){
 			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n") 
 			u.aguarde(300)
-			escreva("\nLembrando que os seguranças não trabalham durante a noite...")
+			escreva("\nLembrando que os seguranças não trabalham durante a noite...\n")
 			leia(x2)
 			limpa()
 			
@@ -1106,6 +1124,8 @@ programa
 				u.aguarde(3000)
 				limpa()
 				
+				game_over()
+				
 			}
 			se(x3 == 2){
 
@@ -1237,6 +1257,7 @@ programa
 				u.aguarde(4500)
 				limpa()
 				
+				mostrar_Escolhas_Feitas()
 				finais_Fim()
 			}
 			se(x4 == 2){
@@ -1244,6 +1265,10 @@ programa
 				escreva(nome_personagem," preferred to risk having your video published...")
 				u.aguarde(3000)
 				limpa()
+				
+				mostrar_Escolhas_Feitas()
+				finais_Fim()
+				
 			}
 			senao{
 				
@@ -1255,9 +1280,48 @@ programa
 
 	funcao finais_Fim()
 	{
-		escreva("")
 		
-		
+	}
+	funcao mostrar_Escolhas_Feitas()
+	{
+		se(I == 1){
+			escreva("As escolhas feitas por você foram:\n\n")
+			u.aguarde(3000)
+			
+			escreva(nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x2)
+			u.aguarde(2000)
+			
+			escreva("Você acertou senha...\n")
+			u.aguarde(1000)
+			escreva("Senha: ",senha)
+			u.aguarde(2000)
+			
+			escreva(nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva(nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x4)
+			u.aguarde(2000)
+			
+			
+			escreva("Obrigado por jogar <3<3<3")
+			u.aguarde(300)
+			escolher_Idioma()
+		}
+		se(I == 2){
+			
+			escreva("")
+		}
 	}
 	funcao final_escrito1()
 	{
