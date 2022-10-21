@@ -844,11 +844,11 @@ programa
                 se(x1 == 1){
                                 escreva("You chose to go to the group The Truth Lies...")
 				u.aguarde(4000)
-				leia()
+				limpa()
 
 				escreva("After finding out where one of these scientists lived, they decided to go after him.\n")
 				u.aguarde(5900)
-				leia()
+				limpa()
 
 				escreva (nome_personagem," without telling your family, follow the plan with 6 more people, 'your friends' each in their car.\n")
 				u.aguarde(5900)
@@ -858,7 +858,7 @@ programa
 					
 			}
 			se(x1 == 2){
-				se(x1 == 2){
+				
                                         escreva(nome_personagem," did not meet your group The truth Lies...")
                                         u.aguarde(4000)
                                         limpa()
@@ -926,6 +926,7 @@ programa
 				game_over()
 				
 			}
+		}
                  se(I == 2){
 		      escreva("The house went into safe mode and closed all doors and windows")
 		      u.aguarde(7000)
@@ -969,7 +970,7 @@ programa
 			}
 		      }
 				
-		}
+			
 		
 	}
 	funcao escolha2()
@@ -1407,5 +1408,6 @@ programa
 		
 		mostrar_Menu()
 	}
+
 
 }
