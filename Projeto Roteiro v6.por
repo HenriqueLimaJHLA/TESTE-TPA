@@ -190,13 +190,14 @@ programa
 			escolha4()
 		}
 	}
-	funcao mostrar_Erro_Escolha5()
-	{
+	funcao mostrar_Erro_Game_Over()
+		{
 		se (I == 1){
 			escreva("\tDígito não Identificado \n")
 			u.aguarde(1000)
 			escreva("\tReescreva o número por favor: \n\n")
 			u.aguarde(1000)
+			game_over()
 			
 		}
 		se (I == 2){
@@ -204,6 +205,7 @@ programa
 			u.aguarde(1000)
 			escreva("\tRewrite number please: \n\n")
 			u.aguarde(1000)
+			game_over()
 			
 		}
 	}
@@ -219,7 +221,7 @@ programa
 			se(reiniciar == 'S' ou reiniciar == 's'){
 				limpa()
 				u.aguarde(300)
-				mostrar_Menu()
+				mostrar_Historia()
 			}
 			senao{
 				escreva("\nAcabou para você!!!\n\n\n")
@@ -248,7 +250,50 @@ programa
 		}
 		
 	}
-	
+	funcao game_over()
+	{
+		inteiro v
+		
+		limpa()
+		se(I == 1){
+			escreva("Fim de Jogo!!!\n")
+			u.aguarde(5000)
+		
+			escreva("Reiniciar programa? \n[1]Sim\n[2]Não\n")
+			leia(v)
+			
+			se(v == 1){
+				u.aguarde(300)
+				escolher_Idioma()
+			}
+			se(v == 2){
+				u.aguarde(300)
+				mostrar_Menu()
+			}
+			senao{
+				mostrar_Erro_Game_Over()
+			}
+		}
+		se(I == 2){
+			escreva("Game Over!!!\n")
+			u.aguarde(5000)
+		
+			escreva("Restart programs? \n[1]Yes\n[2]No\n")
+			leia(v)
+			
+			se(v == 1){
+				u.aguarde(300)
+				escolher_Idioma()
+			}
+			se(v == 2){
+				u.aguarde(300)
+				mostrar_Menu()
+			}
+			senao{
+				mostrar_Erro_Game_Over()
+			}
+		}
+	}
 	funcao mostrar_Historia()
 	{
 		//Historia em Portugues, depois da validação da idade
@@ -758,7 +803,7 @@ programa
 			limpa()
 			
 			se(x1 == 1){
-                escreva("Você escolheu ir ao encontro com o grupo A verdade Mentira...")
+                escreva("Você escolheu ir ao encontro do grupo A verdade Mentira...")
 				u.aguarde(4000)
 				limpa()
 				
@@ -775,13 +820,14 @@ programa
 						
 			}
 			se(x1 == 2){
-				escreva(nome_personagem," não foi ao encontro com o grupo A verdade Mentira...")
+				escreva(nome_personagem," não foi ao encontro com seu grupo A verdade Mentira...")
 				u.aguarde(4000)
 				limpa()
 				
-				escreva("Ao ir a padaria, bateu o carro e morreu, fim")
+				escreva("Sem ir a reunião ",nome_personagem," continua com sua vida normalmente")
 				u.aguarde(4000)
 				limpa()
+				mostrar_Menu()
 			}
 			senao{
 				
@@ -826,22 +872,35 @@ programa
 	funcao senha()
 	{
 		inteiro tempo = 30
+		inteiro senhaOriginal = 40
+		inteiro senha
 		
 		se(I == 1){
-			escreva("A casa entrou em modo de segurança e fechou todas as portas e janela")
-			u.aguarde(9000)
+			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
+			u.aguarde(7000)
 			limpa()
 				
-			escreva("Você tem ",tempo," segundos para resolver a charada, antes que o alarme toque...")
+			escreva("Você tem ",tempo," segundos para decifrar a charada, antes que o alarme toque...")
 			u.aguarde(8000)
 			limpa()
-		
-		
-		enquanto(senha == '_'){
-			para(inteiro i = 30; i <= 1; i--){
+			
+			enquanto(tempo != -1){
+				escreva("          ",tempo,"\nQuando eu tinha 30 anos, a minha irmã tinha a metade da minha idade. Agora que tenho 55 anos, com quantos anos minha irmã está?\n")
+				u.aguarde(1000)
+				limpa()
+				tempo--
+			
+		}
+			leia(senha)
+			se(senha == senhaOriginal){
+				escreva("Foram liberad",letraM,"s")
+				escolha3()
+			}
+			se(senha != senhaOriginal){
+				escreva("O alarme chamou a polícia, todos os integrantes do grupo foram presos...")
+				game_over()
 				
 			}
-		}
 		
 		}
 		
@@ -851,7 +910,9 @@ programa
 	{
 		
 		se(I == 1){
-			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
+			escreva("Decidem ir em um horário:\n[1]Dia\n[2]Noite\n") 
+			u.aguarde(300)
+			escreva("\nLembrando que os seguranças não trabalham durante a noite...")
 			leia(x2)
 			limpa()
 			
@@ -861,24 +922,19 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola e atira em direção ao cientista,\n") 
-				u.aguarde(5000)
-				limpa()
-					
-				escreva("Acertando-o. Agora todos em choque, se tornam imóveis e sem saber o que fazer")
+				escreva("Chegaram na casa e a invadiram")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Assim ",nome_vilao," finaliza o cientista e sua família em uma rajada apenas\n")
-				u.aguarde(5000)
+				escreva(pronome,"s são peg",letraM,"s pelos seguranças do cientista")
+				u.aguarde(2000)
 				limpa()
-					
-				escreva(nome_vilao," está recarregando a arma")
+				
+				escreva("Assim ele chama a policia e vão todos presos...")
 				u.aguarde(3000)
 				limpa()
 				
-				escolha3()
-				
+				game_over()
 				
 			}
 			se(x2 == 2){
@@ -886,14 +942,32 @@ programa
 				escreva("Decidiram ir de noite:\n")
 				u.aguarde(2000)
 				limpa()
-
-				escreva("Chegaram na casa e invadiram mas ")
+				
+				escreva ("Chegando nessa casa, rendem o cientista e sua família, e uma das pessoas no qual ajudara a planejar o plano, saca uma pistola e atira em direção ao cientista,\n") 
+				u.aguarde(5000)
+				limpa()
+					
+				escreva("Acertando-o. Agora todos em choque, se tornam imóveis e sem saber o que fazer")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Assim ",nome_vilao," finaliza o cientista e sua família em uma rajada de tiros\n")
+				u.aguarde(5000)
+				limpa()
+				
+				escreva("Mas antes de morrer a mulher ativou o sistema de alarme da casa\n")
+				u.aguarde(5000)
+				limpa()
+				
+				senha()
+				
+				escreva(nome_vilao," então recarrega sua arma")
 				u.aguarde(3000)
 				limpa()
-
-				escreva("O grupo foi descoberto pelo ",nome_vilao,", então ele prendeu o grupo A Verdade mentira " )
-				u.aguarde(7000)
-				limpa()
+				
+				escolha3()
+				
+				
 				
 			}
 			senao{
@@ -969,10 +1043,11 @@ programa
 				u.aguarde(3000)
 				limpa()
 
-				escreva("E o ",nome_vilao," não pensou duas e vezas e com um tiro matou ",nome_personagem,"...")
+				escreva("E o ",nome_vilao," não pensou duas e vezes e com um tiro matou ",nome_personagem,"...")
 				u.aguarde(3000)
 				limpa()
 				
+				game_over()
 				
 			}
 			se(x3 == 2){ 
@@ -1081,7 +1156,7 @@ programa
 			
 			se(x4 == 1){
 								
-				escreva(nome_personagem," foi a esta provável última reunião...")
+				escreva(nome_personagem," foi essa a ultima reunião provável...")
 				u.aguarde(3000)
 				limpa()
 				
@@ -1106,6 +1181,32 @@ programa
 				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
 				u.aguarde(3000)
 				limpa()
+				
+				escreva("Passou-se 3 semanas normalmente")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E foi ai que um vídeo viralizou")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("O mesmo video que ",nome_personagem," e 'seus amigos' estavam conversando sobre a vacina")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Provavelmente ",nome_vilao," teria o publicado")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Foi quando bateram em sua porta\nEra a Polícia a procura d",pronomeM)
+				u.aguarde(5000)
+				limpa()
+				
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				u.aguarde(5000)
+				limpa()
+				
+				game_over()
 			}
 			senao{
 				
@@ -1155,34 +1256,7 @@ programa
 	funcao finais_Fim()
 	{
 		
-		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 1){
-			
-			
-		}
-		se(x1 == 1 e x2 == 1 e x3 == 2 e x4 == 2){
-			
-			
-		}
 		
-		
-		
-		se(x1 == 1 e x2 == 1 e x3 == 1 e x4 == 2){
-			
-			
-		}
-		se(x1 == 1 e x2 == 1 e x3 == 2 e x4 == 1){
-			
-			
-		}
-		se(x1 == 2 e x2 == 1 e x3 == 1 e x4 == 1){
-			
-			
-		}
-		
-		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 2){
-			
-			
-		}
 		
 	}
 	funcao final_escrito1()
