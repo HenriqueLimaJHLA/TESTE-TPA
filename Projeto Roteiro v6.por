@@ -871,10 +871,9 @@ programa
 	}
 	funcao senha()
 	{
-		inteiro senha1
 		inteiro tempo = 30
 		inteiro senhaOriginal = 40
-	   
+		inteiro senha
 		
 		se(I == 1){
 			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
@@ -892,12 +891,12 @@ programa
 				tempo--
 			
 		}
-			leia(senha1)
-			se(senha1 == senhaOriginal){
+			leia(senha)
+			se(senha == senhaOriginal){
 				escreva("Foram liberad",letraM,"s")
 				escolha3()
 			}
-			se(senha1 != senhaOriginal){
+			se(senha != senhaOriginal){
 				escreva("O alarme chamou a polícia, todos os integrantes do grupo foram presos...")
 				game_over()
 				
@@ -1130,7 +1129,7 @@ programa
 				u.aguarde(7000)
 				limpa()
 
-				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n \n")u.aguarde(7000)
+				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n\ n")u.aguarde(7000)
 				u.aguarde(7000)
 				limpa()
 
@@ -1256,18 +1255,19 @@ programa
 
 	funcao finais_Fim()
 	{
-		
+		escreva("")
 		
 		
 	}
 	funcao final_escrito1()
 	{
-		escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-		escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
-		escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
+		escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a ir, caso algo desse errado...\n")
+		escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', pedindo-lhe para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
+		escreva("Sua família foi uma das primeiras a testarem a vacina, e fala tambem que não morreram por causa da vacina, mas sim por alguma outra doença que já havia na familia a anos\n")
 		escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
-		escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
-		escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
+		escreva("Logo ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, os deixa irem embora, e para a polícia conta uma história, no qual somente ",nome_vilao," foi acusado de tentativa de homicídio e que criava teorias conspiratórias\n")
+		escreva("Assim ",nome_personagem," volta para sua família e se torna Adm de seu grupo...\n")
+		escreva("A verdadeira Mentira")
 		u.aguarde(15000)
 		limpa ()
 		
@@ -1275,8 +1275,9 @@ programa
 	}
 	funcao final_escrito2()
 	{
-		escreva ("Assim, passando mais de uma semana e encontram apenas os cientistas e não o liberador da vacina, a ",nome_vilao," decide primeiro matar a família de ",nome_personagem," e deixa-lo ver,\n") 
-		escreva("e depois ",nome_vilao," mata ele.")
+		escreva ("Assim, passando mais de 7 dias e não encontrarem nenhum resquício dos outros cientistas e do liberador da vacina, ",nome_vilao," vai a casa de ",nome_personagem)
+		escreva("E decide primeiro matar a família de ",nome_personagem," e deixa-l",letraM," ver, o sofrimento deles\n") 
+		escreva("Logo em seguida ",nome_vilao," ",letraM," elimina.")
 		u.aguarde(7000)
 		limpa ()
 		
@@ -1284,9 +1285,9 @@ programa
 	}
 	funcao final_escrito3()
 	{
-		escreva("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho dos cientistas, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-		escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedi para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
-		escreva("mas o número é bem baixo se ver o lado de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, assim acabando que ninguém saiu vivo de lá.")
+		escreva("Assim, após encontrarem todos, eles dão um jeito para armar uma emboscada no trabalho dos cientistas, contando a ",nome_vilao,", ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
+		escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedr para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
+		escreva("mas o número é bem baixo em relação ao número de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, fazendo com que ninguém saia vivo de lá.")
 		u.aguarde(15000)
 		limpa ()
 		
