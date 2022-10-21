@@ -874,7 +874,7 @@ programa
 	{
 		inteiro tempo = 30
 		inteiro senhaOriginal
-		inteiro idade = 50
+		inteiro idade = 30
 		
 		senhaOriginal= idade - 15
 		
