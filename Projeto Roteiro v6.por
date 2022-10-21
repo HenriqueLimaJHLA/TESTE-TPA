@@ -874,7 +874,7 @@ programa
 	{
 		inteiro tempo = 30
 		inteiro senhaOriginal
-		inteiro idade = 30
+		inteiro idade = 50
 		
 		senhaOriginal= idade - 15
 		
@@ -888,7 +888,7 @@ programa
 			limpa()
 			
 			enquanto(tempo != -1){
-				escreva("",tempo,"\nQuando eu tinha ",idade," anos, a minha irmã tinha a metade da minha idade. Agora que tenho 50 anos, com quantos anos minha irmã está?\n")
+				escreva("",tempo,"\nQuando eu tinha 30 anos, a minha irmã tinha a metade da minha idade. Agora que tenho 50 anos, com quantos anos minha irmã está?\n")
 				u.aguarde(1000)
 				limpa()
 				tempo--
