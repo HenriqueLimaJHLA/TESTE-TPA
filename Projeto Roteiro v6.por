@@ -804,7 +804,7 @@ programa
 			limpa()
 			
 			se(x1 == 1){
-                escreva("Você escolheu ir ao encontro do grupo A Verdadeira Mentira...")
+                                escreva("Você escolheu ir ao encontro do grupo A Verdadeira Mentira...")
 				u.aguarde(4000)
 				limpa()
 				
@@ -858,7 +858,15 @@ programa
 					
 			}
 			se(x1 == 2){
-				escreva("fuck")
+				se(x1 == 2){
+                                        escreva(nome_personagem," did not meet your group The truth Lies...")
+                                        u.aguarde(4000)
+                                        limpa()
+
+                                        escreva("Without going to meeting ",nome_personagem," continue with your life normally")
+                                        u.aguarde(4000)
+                                        limpa()
+                                        game_over()
 				
 				
 			}
