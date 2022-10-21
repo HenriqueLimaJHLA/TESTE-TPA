@@ -823,6 +823,30 @@ programa
 			}
 		}
 	}
+	funcao senha()
+	{
+		inteiro tempo = 30
+		
+		se(I == 1){
+			escreva("A casa entrou em modo de segurança e fechou todas as portas e janela")
+			u.aguarde(9000)
+			limpa()
+				
+			escreva("Você tem ",tempo," segundos para resolver a charada, antes que o alarme toque...")
+			u.aguarde(8000)
+			limpa()
+		
+		
+		enquanto(senha == '_'){
+			para(inteiro i = 30; i <= 1; i--){
+				
+			}
+		}
+		
+		}
+		
+		
+	}
 	funcao escolha2()
 	{
 		
@@ -863,7 +887,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 
-				escreva("Chegaram na casa e invadiram mais ")
+				escreva("Chegaram na casa e invadiram mas ")
 				u.aguarde(3000)
 				limpa()
 
@@ -1130,10 +1154,7 @@ programa
 
 	funcao finais_Fim()
 	{
-		se(x1 == 1 e x2 == 2 e x3 == 1 e x4 == 2){
-			
-			
-		}
+		
 		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 1){
 			
 			
@@ -1142,10 +1163,7 @@ programa
 			
 			
 		}
-		se(x1 == 2 e x2 == 2 e x3 == 1 e x4 == 1){
-			
-			
-		}
+		
 		
 		
 		se(x1 == 1 e x2 == 1 e x3 == 1 e x4 == 2){
@@ -1156,31 +1174,16 @@ programa
 			
 			
 		}
-		se(x1 == 1 e x2 == 2 e x3 == 1 e x4 == 1){
-			
-			
-		}
 		se(x1 == 2 e x2 == 1 e x3 == 1 e x4 == 1){
 			
 			
 		}
 		
-		se(x1 == 2 e x2 == 2 e x3 == 2 e x4 == 1){
-			
-			
-		}
-		se(x1 == 2 e x2 == 2 e x3 == 1 e x4 == 2){
-			
-			
-		}
 		se(x1 == 2 e x2 == 1 e x3 == 2 e x4 == 2){
 			
 			
 		}
-		se(x1 == 1 e x2 == 2 e x3 == 2 e x4 == 2){
-			
-			
-		}
+		
 	}
 	funcao final_escrito1()
 	{
