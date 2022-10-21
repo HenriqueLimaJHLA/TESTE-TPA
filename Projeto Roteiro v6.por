@@ -105,6 +105,23 @@ programa
 			mostrar_Finais()
 		}
 	}
+	funcao mostrar_Erro_caracteristica()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			mostrar_Historia()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			mostrar_Historia()
+		}
+	}
 	funcao mostrar_Erro_Escolha1()
 	{
 		se (I == 1){
@@ -329,6 +346,10 @@ programa
 					
 					
 				}
+				senao{
+					mostrar_Erro_caracteristica()
+					
+				}
 					
 			}
 		
@@ -425,6 +446,10 @@ programa
 					limpa()
 					
 					escolha1()
+				}
+				senao{
+					
+					mostrar_Erro_caracteristica()
 				}
 			}
 		}
@@ -939,7 +964,7 @@ programa
 				u.aguarde(6000)
 				limpa()
 			
-				escreva("Assustados todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
+				escreva("Assustados, todos vão para suas casas, e nenhum deles conta a polícia, pois teorias conspiratórias,\n") 
 				u.aguarde(7000)
 				limpa()
 					
@@ -997,7 +1022,7 @@ programa
 				u.aguarde(6000)
 				limpa()
 
-				escreva("Frightened all go to their houses, and none of them tell the police, because conspiracy theories,\n")
+				escreva("Frightened, all go to their houses, and none of them tell the police, because conspiracy theories,\n")
 				u.aguarde(7000)
 				limpa()
 				
