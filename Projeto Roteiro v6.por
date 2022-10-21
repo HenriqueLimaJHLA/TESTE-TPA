@@ -1192,6 +1192,7 @@ programa
 				u.aguarde(4500)
 				limpa()
 				
+				mostrar_Escolhas_Feitas()
 				finais_Fim()
 				
 				
