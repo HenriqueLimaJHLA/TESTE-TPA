@@ -3,7 +3,7 @@ programa
 	inclua biblioteca Util --> u
 
 	cadeia nome_personagem
-	inteiro I, D=0, idade_personagem, numero = 0
+	inteiro I, D = 0, n = 3, idade_personagem, numero = 0
 	inteiro final, decisao
 	caracter reiniciar
 	cadeia nome_vilao
@@ -876,7 +876,7 @@ programa
 		inteiro senhaOriginal
 		inteiro idade = 50
 		
-		senhaOriginal= idade - 15
+		senhaOriginal= idade/(idade/2)*(n*n-n) + 8 * n - 1
 		
 		se(I == 1){
 			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
