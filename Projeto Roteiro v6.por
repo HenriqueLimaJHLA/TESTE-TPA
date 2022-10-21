@@ -838,20 +838,19 @@ programa
 		}
 		se(I == 2){
 			
-			escreva(nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
-			leia(x1)
-			limpa()
-			
-			se(x1 == 1){
-				escreva("You chose to go on a date with the group The Truth Lies...")
+	        escreva(nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
+                leia(x1)
+                limpa()
+                se(x1 == 1){
+                                escreva("You chose to go to the group The Truth Lies...")
 				u.aguarde(4000)
-				limpa()
-				
-				escreva ("After finding out where one of these scientists lived, they decided to go after him.\n")
+				leia()
+
+				escreva("After finding out where one of these scientists lived, they decided to go after him.\n")
 				u.aguarde(5900)
-				limpa()
-					
-				escreva (nome_personagem," without telling your family anything, follow the plan with 6 other people, 'your friends', each in your car.\n")
+				leia()
+
+				escreva (nome_personagem," without telling your family, follow the plan with 6 more people, 'your friends' each in their car.\n")
 				u.aguarde(5900)
 				limpa()
 					
