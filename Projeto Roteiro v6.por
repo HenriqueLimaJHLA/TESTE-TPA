@@ -630,8 +630,7 @@ programa
 			escreva("Quais dos finais quer ver?\n[1] - Final Bom\n[2] - Final Intermediário\n[3] - Final Ruim\n[4] - Voltar\n\n")
 			leia (final)
 			limpa ()
-
-			limpa()
+			
 				
 			se (final ==1) {
 				nome_nos_finais()
@@ -665,7 +664,7 @@ programa
 				u.aguarde(15000)
 				limpa ()
 				mostrar_Finais()
-			}
+}
 			se (final ==4){
 				u.aguarde(300)
 				mostrar_Menu()
@@ -682,6 +681,14 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
+				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
+				escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
+				escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
+				escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
+				escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
+				escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
+				u.aguarde(15000)
+				limpa ()
 				
 				mostrar_Finais()
 
@@ -694,6 +701,7 @@ programa
 			}
 			se (final==3){
 				nome_nos_finais()
+				
 				
 				
 				mostrar_Finais()
@@ -960,48 +968,52 @@ programa
 		}
 		se(I == 2){
 			
+			escreva(nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
+			leia(x3)
+			limpa()
+			
 			se(x3 == 1){
-				escreva("and in case any of you tryed stoped me, yours family will be the next.\n")
-				u.aguarde(6000)
+				
+				escreva("Você decidiu reagir...")
+				u.aguarde(3000)
 				limpa()
 
-				escreva("Everyone goes home scared, and none of them called with a police, because conspiracy theories,\n") 
-				u.aguarde(7000)
+				escreva("E o ",nome_vilao," não pensou duas e vezas e com um tiro matou ",nome_personagem,"...")
+				u.aguarde(3000)
 				limpa()
-				
-				escreva("like theirs, of the vaccine, were being tried in court, reaching sentences of 30 years in prison.\n")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("In next day  a mensage arrive in cellphone ",nome_personagem," of anonymous number, the message is a video of her and another five pleople planning  about the vaccine, togheter with a message say:\n\n")
-				u.aguarde(7000)
-				limpa()
-				
-				escreva("-If you don't go to localization, I posted this video.\n")
-				u.aguarde(7000)
-				limpa()
-
-				escreva("With so much fear to publish, she go to localization, in which the same woman who killed the scientist and his family is waiting for the other 5 members of the old plan.\n")
-				u.aguarde(8000)
-				limpa()
-
-				escreva("After all people listen a new plan of woman, they have obligation to find the others trhee scientist and the who released the vaccine.\n") 
-				u.aguarde(4500)
-				limpa()
-				
-				escreva ("within a maximum of one week, case pass this, she posted the video.")
-				u.aguarde(4500)
-				limpa()
-					
-				escreva ("END...\n")	
-				u.aguarde(2000)
-				limpa()
-				mostrar_Menu()
-				
 				
 			}
 			se(x3 == 2){
 
+				escreva(nome_personagem," was silent...")
+				u.aguarde(3000)
+				limpa()
+
+				escreva("So ",nome_vilao," says:\n\n -My husband and daughter died after taking the vaccine, so I will take revenge on everyone who participated in the creation of the vaccine\n")
+				u.aguarde(6000)
+				limpa()
+				
+				escreva("And if any of you try to stop me, your family will be next.")
+				u.aguarde(6000)
+				limpa()
+
+				escreva("Frightened all go to their houses, and none of them tell the police, because conspiracy theories,\n")
+				u.aguarde(7000)
+				limpa()
+				
+				escreva("Just like them, the vaccine, were being tried in court, reaching sentences of 30 years in penitentiary. ")
+				u.aguarde(7000)
+				limpa()
+
+				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n\ n")u.aguarde(7000)
+				u.aguarde(7000)
+				limpa()
+
+				escreva(" -If you do not attend the venue, I will publish this video.")
+				u.aguarde(7000)
+				limpa()
+				
+				escolha4()
 				
 			}
 			senao{
@@ -1053,33 +1065,17 @@ programa
 		}
 		se(I == 2){
 			
+			escreva(nome_personagem," will you attend this new meeting?\n[1]Yes\n[2]No\n")
+			leia(x4)
+			limpa()
+			
 			se(x4 == 1){
 				
-			}
-			se(x4 == 2){
-				
-			}
-			senao{
-				
-				mostrar_Erro_Escolha4()
-			}
-			
-			
-		}
-		     se(I == 1){
-	               escreva(nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
-			     leia(x4)
-		          limpa()
-
-			se(x4 == 1){
-			
-
-
-			      escreva(nome_personagem," went to this likely last meeting...")
+				escreva(nome_personagem," went to this likely last meeting...")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Too scared to publish, ",pronomeM," go to the place where ",nome_vilao," ",letraM,"expected")
+				escreva("Too afraid of publishing, ",pronomeM," goes to the place, where ",nome_vilao," ",letraM," expected")
 				u.aguarde(8000)
 				limpa()
 	
@@ -1087,18 +1083,23 @@ programa
 				u.aguarde(4500)
 				limpa()
 					
-				escreva("In a week at the most, if it went beyond that, ",nome_vilao," would post the video in the same way.")
+				escreva("In a week at most, if more than that, ",nome_vilao," would publish the video in the same way.")
 				u.aguarde(4500)
 				limpa()
+				
+				finais_Fim()
 			}
-
-
-
-
-
-
-			
+			se(x4 == 2){
+				
+				escreva(nome_personagem," preferred to risk having your video published...")
+				u.aguarde(3000)
+				limpa()
 			}
+			senao{
+				
+				mostrar_Erro_Escolha4()
+			}
+		}
 	}
 	                       
 
