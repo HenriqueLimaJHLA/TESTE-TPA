@@ -871,9 +871,10 @@ programa
 	}
 	funcao senha()
 	{
+		inteiro senha1
 		inteiro tempo = 30
 		inteiro senhaOriginal = 40
-		inteiro senha
+	   
 		
 		se(I == 1){
 			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
@@ -891,12 +892,12 @@ programa
 				tempo--
 			
 		}
-			leia(senha)
-			se(senha == senhaOriginal){
+			leia(senha1)
+			se(senha1 == senhaOriginal){
 				escreva("Foram liberad",letraM,"s")
 				escolha3()
 			}
-			se(senha != senhaOriginal){
+			se(senha1 != senhaOriginal){
 				escreva("O alarme chamou a polícia, todos os integrantes do grupo foram presos...")
 				game_over()
 				
@@ -1129,7 +1130,7 @@ programa
 				u.aguarde(7000)
 				limpa()
 
-				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n\ n")u.aguarde(7000)
+				escreva("The next day, a message arrives on the cell phone from ",nome_personagem, " from an unknown number, it was a video of",pronomeM," and the other 5 people planning about the vaccine, along with a message: \n \n")u.aguarde(7000)
 				u.aguarde(7000)
 				limpa()
 
