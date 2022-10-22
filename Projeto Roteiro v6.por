@@ -1326,10 +1326,9 @@ programa
 				
 			}
 			se(x4 == 2){
-								
-			escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
 				
-                                u.aguarde(3000)
+				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
+				u.aguarde(3000)
 				limpa()
 				
 				escreva("Passou-se 3 semanas normalmente")
@@ -1355,7 +1354,7 @@ programa
 				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
 				u.aguarde(5000)
 				limpa()
-				
+			
 				mostrar_Escolhas_Feitas()
 			}
 			senao{
@@ -1424,45 +1423,7 @@ programa
 				escolha5()
 				
 			}
-			se(x4 == 2){
-				
-				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
-				u.aguarde(3000)
-				limpa()
-				
-				escreva("Passou-se 3 semanas normalmente")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva("E foi ai que um vídeo viralizou")
-				u.aguarde(3000)
-				limpa()
-				
-				escreva("O mesmo video que ",nome_personagem," e 'seus amigos' estavam conversando sobre a vacina")
-				u.aguarde(4000)
-				limpa()
-				
-				escreva("Provavelmente ",nome_vilao," teria o publicado")
-				u.aguarde(4000)
-				limpa()
-				
-				escreva("Foi quando bateram em sua porta\nEra a Polícia a procura d",pronomeM)
-				u.aguarde(5000)
-				limpa()
-				
-				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
-				u.aguarde(5000)
-				limpa()
 			
-				mostrar_Escolhas_Feitas()
-			
-				
-			}
-			senao{
-				
-				mostrar_Erro_Escolha4()
-			}
-			se(I == 2){
 				
 			se(x4 == 2){
 				
@@ -1501,7 +1462,7 @@ programa
 				
 				mostrar_Erro_Escolha4()
 			}	
-			     	}
+			     	
 			
 		}
 	}
