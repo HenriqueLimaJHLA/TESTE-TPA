@@ -3,14 +3,13 @@ programa
 	inclua biblioteca Util --> u
 
 	cadeia nome_personagem
-	inteiro I, D = 0, n = 3, idade_personagem, numero = 0
+	inteiro I, D = 0, idade_personagem, numero = 0
 	inteiro final, decisao
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
 	inteiro x1, x2, x3, x4, x5
 	cadeia pronome, pronomeM, letra, letraM
-	inteiro senha
 		
 	funcao inicio()
 	{
@@ -189,6 +188,23 @@ programa
 			escreva("\tRewrite number please: \n\n")
 			u.aguarde(1000)
 			escolha4()
+		}
+	}
+    funcao mostrar_Erro_Escolha5()
+	{
+		se (I == 1){
+			escreva("\tDígito não Identificado \n")
+			u.aguarde(1000)
+			escreva("\tReescreva o número por favor: \n\n")
+			u.aguarde(1000)
+			escolha5()
+		}
+		se (I == 2){
+			escreva("\tNumber don't Identified \n")
+			u.aguarde(1000)
+			escreva("\tRewrite number please: \n\n")
+			u.aguarde(1000)
+			escolha5()
 		}
 	}
 	funcao mostrar_Erro_Game_Over()
@@ -882,28 +898,44 @@ programa
 		inteiro tempo = 30
 		inteiro senhaOriginal
 		inteiro idade = 50
+		inteiro senha=53241 
 		
-		senhaOriginal= idade/(idade/2)*(n*n-n) + 8 * n - 1
 		
 		se(I == 1){
 			escreva("A casa entrou em modo de segurança e fechou todas as portas e janelas")
 			u.aguarde(7000)
 			limpa()
 				
-			escreva("Você tem ",tempo," segundos para decifrar a charada, antes que o alarme toque...")
-			u.aguarde(8000)
+			
+			escreva("\n\t\t\t\tPreste atenção nos números que vão aparecer e sumir na tela para formar a senha: ")
+			u.aguarde(2500)
 			limpa()
 			
-			enquanto(tempo != -1){
-				escreva("",tempo,"\nQuando eu tinha 30 anos, a minha irmã tinha a metade da minha idade. Agora que tenho 50 anos, com quantos anos minha irmã está?\n")
-				u.aguarde(1000)
-				limpa()
-				tempo--
+			escreva("\t\t\t\t \n\n\n\t\t\t\t\t\t\t\t\t\t\t\t5")
+			u.aguarde(330)
+			limpa()
 			
-			}
-			escreva("Qual é a senha?\nDois dígitos: ")
-			leia(senha)
-			se(senha == senhaOriginal){
+			escreva("\t\t\t\t \n\t\t\t\t3")
+			u.aguarde(330)
+			limpa()
+				
+			escreva("\t\t\t\t \n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t2")
+			u.aguarde(330)
+			limpa()
+			
+			escreva("\t\t\t\t \n\n\t\t\t\t\t\t\t\t4")
+			u.aguarde(330)
+			limpa()
+			
+			escreva("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1")
+			u.aguarde(320)
+			limpa()
+
+			escreva ("Digite a senha: ")
+			leia (senha)
+			limpa()
+		}
+		se(senha ==53241){
 				escreva("\nTodas as portas se abriram")
 				u.aguarde(2000)
 				limpa()
@@ -913,8 +945,9 @@ programa
 				limpa()
 				
 				escolha3()
-			}
-			se(senha != senhaOriginal){
+		}
+
+		senao{
 				escreva("O alarme disparou!!!")
 				u.aguarde(3000)
 				limpa()
@@ -923,11 +956,10 @@ programa
 				u.aguarde(3000)
 				limpa()
 				
-				game_over()
-				
+				game_over()	
 			}
-		}
-                 se(I == 2){
+	
+             se(I == 2){
 		      escreva("The house went into safe mode and closed all doors and windows")
 		      u.aguarde(7000)
 		      limpa()
@@ -1225,7 +1257,7 @@ programa
 			
 			se(x4 == 1){
 								
-				escreva(nome_personagem," foi essa a ultima reunião provável...")
+				escreva(nome_personagem," foi essa, sua ultima reunião...")
 				u.aguarde(3000)
 				limpa()
 				
@@ -1241,9 +1273,9 @@ programa
 				u.aguarde(4500)
 				limpa()
 				
-				mostrar_Escolhas_Feitas()
-				finais_Fim()
 				
+				escolha5()
+				mostrar_Escolhas_Feitas()
 				
 			}
 			se(x4 == 2){
@@ -1308,16 +1340,39 @@ programa
 				limpa()
 				
 				mostrar_Escolhas_Feitas()
-				finais_Fim()
+				escolha5()
 			}
 			se(x4 == 2){
 				
-				escreva(nome_personagem," preferred to risk having your video published...")
+				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
 				u.aguarde(3000)
 				limpa()
 				
-				mostrar_Escolhas_Feitas()
-				finais_Fim()
+				escreva("Passou-se 3 semanas normalmente")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E foi ai que um vídeo viralizou")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("O mesmo video que ",nome_personagem," e 'seus amigos' estavam conversando sobre a vacina")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Provavelmente ",nome_vilao," teria o publicado")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Foi quando bateram em sua porta\nEra a Polícia a procura d",pronomeM)
+				u.aguarde(5000)
+				limpa()
+				
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				u.aguarde(5000)
+				limpa()
+				
+				game_over()
 				
 			}
 			senao{
@@ -1326,8 +1381,30 @@ programa
 			}
 		}
 	}
-	                       
+	funcao escolha5()
+	{
+		se(I == 1){
+			se(x4 == 1){
+				
+				escreva("Fazendo")
+				
 
+			}
+			se(x4 == 2){
+				
+				escreva("Fazendo")
+				
+				
+				
+			}
+			
+			
+		}
+		se(I == 2){
+			escreva("Fazendo")
+		}
+		
+	}
 	funcao finais_Fim()
 	{
 		
@@ -1350,7 +1427,7 @@ programa
 			
 			escreva("\n\nVocê acertou senha...\n")
 			u.aguarde(1000)
-			escreva("Senha: ",senha)
+			escreva("Senha: ")
 			u.aguarde(2000)
 			
 			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
