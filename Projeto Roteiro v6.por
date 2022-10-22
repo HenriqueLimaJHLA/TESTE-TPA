@@ -1212,11 +1212,11 @@ programa
 			
 			se(x3 == 1){
 				
-				escreva("Você decidiu reagir...")
+				escreva("You decided to react...")
 				u.aguarde(3000)
 				limpa()
 
-				escreva("E o ",nome_vilao," não pensou duas e vezas e com um tiro matou ",nome_personagem,"...")
+				escreva("It's the ",nome_vilao," didn't think twice and with one shot he killed",nome_personagem,"...")
 				u.aguarde(3000)
 				limpa()
 				
@@ -1454,6 +1454,7 @@ programa
 				limpa()
 			
 				mostrar_Escolhas_Feitas()
+			
 				
 			}
 			senao{
@@ -1578,12 +1579,68 @@ programa
 					
 			}
 			se(x5 == 2){
+					 escreva("You thought it best to talk to the scientist...")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Asking you to explain about the vaccine")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("man recognizes",nome_vilao," and his family from a reportage\n")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("They had been the first people to test the vaccine, and he also says that they did not die from the vaccine.")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("But for some other disease that was already passed on for generations")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," then you remember that your mother-in-law would have told you something like that")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Now feeling really bad for killing for no reason")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Diese ",nome_vilao)
+				u.aguarde(1500)
+				limpa()
+				
+				escreva("Reason: Suicide")
+				u.aguarde(1000)
+				limpa()
+				
+				escreva("Soon ",nome_personagem," explains everything that had happened to the scientist, he understanding, lets them go")
+				u.aguarde(2500)
+				limpa()
+				
+				escreva("Then telling the police, who only ",nome_vilao," was guilty of trespassing, conspiracy theories\nAnd attempted murder")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("thus ",nome_personagem," goes back to his family and becomes an Adm of his group, so it doesn't happen again...\n"
+				u.aguarde(2000)
+				limpa()
 					
+			}
 			}
 			senao{
 				
 				mostrar_Erro_Escolha5()	
 			}
+		}
+		
+	}
+			
+			
+		
+		se(I == 2){
+			
 		}
 		
 	}
