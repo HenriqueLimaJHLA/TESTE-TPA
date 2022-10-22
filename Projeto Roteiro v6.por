@@ -8,7 +8,7 @@ programa
 	caracter reiniciar
 	cadeia nome_vilao
 	inteiro direcao
-	inteiro x1, x2, x3, x4, x5
+	inteiro x1, x2, x3, x4, x5, variavel = 0
 	cadeia pronome, pronomeM, letra, letraM
 		
 	funcao inicio()
@@ -730,7 +730,7 @@ programa
 			}
 			se (final ==2){
 				nome_nos_finais()
-				
+				escreva("E ",nome_vilao," morre também...")
 				u.aguarde(5000)
 				limpa ()
 				mostrar_Finais()
@@ -758,7 +758,7 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva("thus ",nome_personagem," goes back to his family and becomes an Adm of his group, so that all this doesn't happen again...\n")
+				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
 				u.aguarde(5000)
 				limpa ()
 				
@@ -774,7 +774,7 @@ programa
 			se (final==3){
 				nome_nos_finais()
 				
-				escreva(nome_personagem," was arrested, and sentenced to 30 years in prison...")
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
 				u.aguarde(5000)
 				limpa ()
 				
@@ -1459,16 +1459,66 @@ programa
 				
 				escreva("Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
 				leia(x5)
+				variavel = 1
+				
 				
 			se(x5 == 1){
 				
-				escreva("Fazendo")
+				escreva("Você achou melhor falar com ",nome_vilao,"...")
+				u.aguarde(2000)
+				limpa()
 				
-
+				escreva(nome_personagem," pergunta o porque de achar que a Vingança\nE o melhor caminho")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Como resposta ",nome_vilao," diz que desde quando era criança")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Aprendeu que na vida sempre foi olho por olho e dente por dente")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E que ao perder sua família, perdeu sua estrutura")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E sendo assim não teriam mais o direito de viver")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Enquanto os dois conversavam, o outro cientista chamou a policia")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Agora com a polícia já invadindo o local")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," não vê alternativas, e mata ",nome_personagem," com um tiro na cabeça")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E ainda consegue disparar mais vezes, numa dessas consegue acertar o braço do cientista")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Mas a Polícia já chega revidando, para que ",nome_vilao," não faça mais vítimas")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E ",nome_vilao," morre também...")
+				u.aguarde(2000)
+				limpa()
+				
+				mostrar_Escolhas_Feitas()
+				
+				
 			}
 			se(x5 == 2){
 				
-				 escreva("Você achou melhor falar com o cientista...")
+				escreva("Você achou melhor falar com o cientista...")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1515,7 +1565,8 @@ programa
 				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
 				u.aguarde(2000)
 				limpa()
-					
+				
+				mostrar_Escolhas_Feitas()
 			}
 			senao{
 				
@@ -1524,11 +1575,63 @@ programa
 			
 		}
 		se(I == 2){
+				escreva("Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				leia(x5)
+				variavel = 1	
+				
 			se(x5 == 1){
-					
+				escreva("Você achou melhor falar com ",nome_vilao,"...")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_personagem," pergunta o porque de achar que a Vingança\nE o melhor caminho")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Como resposta ",nome_vilao," diz que desde quando era criança")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Aprendeu que na vida sempre foi olho por olho e dente por dente")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E que ao perder sua família, perdeu sua estrutura")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E sendo assim não teriam mais o direito de viver")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Enquanto os dois conversavam, o outro cientista chamou a policia")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Agora com a polícia já invadindo o local")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," não vê alternativas, e mata ",nome_personagem," com um tiro na cabeça")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E ainda consegue disparar mais vezes, numa dessas consegue acertar o braço do cientista")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Mas a Polícia já chega revidando, para que ",nome_vilao," não faça mais vítimas")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E ",nome_vilao," morre também...")
+				u.aguarde(2000)
+				limpa()
+				
+				mostrar_Escolhas_Feitas()
 			}
 			se(x5 == 2){
-					 escreva("You thought it best to talk to the scientist...")
+				escreva("You thought it best to talk to the scientist...")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1614,8 +1717,14 @@ programa
 			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
 			u.aguarde(1000)
 			escreva("Escolha feita: ",x4)
-			u.aguarde(6000)
+			u.aguarde(5000)
 			
+			se(variavel == 1){
+				escreva("\n\n5-) Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				u.aguarde(1000)
+				escreva("Escolha feita: ",x5)
+				u.aguarde(5000)
+			}
 			
 			escreva("\n\n\nObrigado por jogar <3<3<3")
 			u.aguarde(15000)
@@ -1650,8 +1759,14 @@ programa
 			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
 			u.aguarde(1000)
 			escreva("Choice made:",x4)
-			u.aguarde(6000)
+			u.aguarde(5000)
 			
+			se(variavel == 1){
+				escreva("\n\n5-) Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				u.aguarde(1000)
+				escreva("Escolha feita: ",x5)
+				u.aguarde(5000)
+			}
 			
 			escreva("\n\n\nThanks for playing <3<3<3")
 			u.aguarde(15000)
