@@ -1710,15 +1710,6 @@ funcao mostrar_Escolhas_Feitas()
 			}
 		}
 		
-	}
-			
-			
-		
-		se(I == 2){
-			
-		}
-		
-	}
-	
+	}	
 	
 }
