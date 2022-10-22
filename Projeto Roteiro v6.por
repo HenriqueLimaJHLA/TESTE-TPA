@@ -1384,13 +1384,13 @@ programa
 	funcao escolha5()
 	{
 		se(I == 1){
-			se(x4 == 1){
+			se(x5 == 1){
 				
 				escreva("Fazendo")
 				
 
 			}
-			se(x4 == 2){
+			se(x5 == 2){
 				
 				escreva("Fazendo")
 				
