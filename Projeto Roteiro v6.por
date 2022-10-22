@@ -758,7 +758,7 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
+				escreva("thus ",nome_personagem," goes back to his family and becomes an Adm of his group, so that all this doesn't happen again...\n")
 				u.aguarde(5000)
 				limpa ()
 				
@@ -774,7 +774,7 @@ programa
 			se (final==3){
 				nome_nos_finais()
 				
-				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				escreva(nome_personagem," was arrested, and sentenced to 30 years in prison...")
 				u.aguarde(5000)
 				limpa ()
 				
