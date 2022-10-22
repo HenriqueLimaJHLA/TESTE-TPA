@@ -237,7 +237,7 @@ programa
 			
 			se(reiniciar == 'S' ou reiniciar == 's'){
 				limpa()
-				u.aguarde(300)
+				u.aguarde(300)  
 				mostrar_Historia()
 			}
 			senao{
@@ -281,10 +281,12 @@ programa
 			
 			se(v == 1){
 				u.aguarde(300)
+                                limpa()
 				escolher_Idioma()
 			}
 			se(v == 2){
 				u.aguarde(300)
+                                limpa()
 				mostrar_Menu()
 			}
 			senao{
@@ -300,10 +302,12 @@ programa
 			
 			se(v == 1){
 				u.aguarde(300)
+                                limpa()
 				escolher_Idioma()
 			}
 			se(v == 2){
 				u.aguarde(300)
+                                limpa()
 				mostrar_Menu()
 			}
 			senao{
@@ -899,23 +903,23 @@ programa
 			limpa()
 			
 			escreva("\t\t\t\t \n\n\n\t\t\t\t\t\t\t\t\t\t\t\t5")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\t\t\t\t \n\t\t\t\t3")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 				
 			escreva("\t\t\t\t \n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t2")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\t\t\t\t \n\n\t\t\t\t\t\t\t\t4")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1")
-			u.aguarde(320)
+			u.aguarde(500)
 			limpa()
 
 			escreva ("Digite a senha: ")
@@ -956,23 +960,23 @@ programa
 			limpa()
 			
 			escreva("\t\t\t\t \n\n\n\t\t\t\t\t\t\t\t\t\t\t\t5")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\t\t\t\t \n\t\t\t\t3")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 				
 			escreva("\t\t\t\t \n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t2")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\t\t\t\t \n\n\t\t\t\t\t\t\t\t4")
-			u.aguarde(330)
+			u.aguarde(500)
 			limpa()
 			
 			escreva("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1")
-			u.aguarde(320)
+			u.aguarde(500)
 			limpa()
 
 			escreva ("Type the password: ")
