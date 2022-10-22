@@ -1438,7 +1438,24 @@ programa
 	funcao escolha5()
 	{
 		se(I == 1){
-			escreva("Fazendo")
+				
+				escreva("Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				leia(x5)
+				
+			se(x5 == 1){
+				
+				escreva("Fazendo")
+				
+
+			}
+			se(x5 == 2){
+				
+				escreva("Fazendo")
+			
+				
+				
+			}
+			
 			
 		}
 		se(I == 2){
@@ -1446,10 +1463,7 @@ programa
 		}
 		
 	}
-	funcao finais_Fim()
-	{
-		
-	}
+	
 	funcao mostrar_Escolhas_Feitas()
 	{
 		se(I == 1){
