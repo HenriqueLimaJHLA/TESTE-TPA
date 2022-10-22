@@ -1399,20 +1399,7 @@ programa
 	funcao escolha5()
 	{
 		se(I == 1){
-			se(x5 == 1){
-				
-				escreva("Fazendo")
-				
-
-			}
-			se(x5 == 2){
-				
-				escreva("Fazendo")
-				
-				
-				
-			}
-			
+			escreva("Fazendo")
 			
 		}
 		se(I == 2){
