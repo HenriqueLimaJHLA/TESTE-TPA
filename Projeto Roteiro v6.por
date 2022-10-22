@@ -810,6 +810,81 @@ programa
 		
 	
 	}
+funcao mostrar_Escolhas_Feitas()
+	{
+		se(I == 1){
+			escreva("As escolhas feitas por você foram:\n\n")
+			u.aguarde(3000)
+			
+			escreva("1-) ",nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("\n\n2-) Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x2)
+			u.aguarde(2000)
+			
+			escreva("\n\nVocê acertou senha...\n")
+			u.aguarde(1000)
+			escreva("Senha: ")
+			u.aguarde(2000)
+			
+			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x4)
+			u.aguarde(6000)
+			
+			
+			escreva("\n\n\nObrigado por jogar <3<3<3")
+			u.aguarde(15000)
+			limpa()
+			escolher_Idioma()
+		}
+		se(I == 2){
+			
+			escreva("The choices you made were:\n\n")
+			u.aguarde(3000)
+			
+			escreva("1-) ",nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("\n\n2-) They decide to go at a time:\n[1]Day\n[2]Night\n")
+			u.aguarde(1000)
+			escreva("Choice made: ",x2)
+			u.aguarde(2000)
+			
+			escreva("\n\nYou got the password right...\n")
+			u.aguarde(1000)
+			escreva("Senha: ")
+			u.aguarde(2000)
+			
+			escreva("\n\n3-) ",nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Choice made:",x4)
+			u.aguarde(6000)
+			
+			
+			escreva("\n\n\nThanks for playing <3<3<3")
+			u.aguarde(15000)
+			limpa()
+			escolher_Idioma()
+		}
+	}
+	
 	funcao escolha1()
 	{
 		
@@ -1623,7 +1698,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("thus ",nome_personagem," goes back to his family and becomes an Adm of his group, so it doesn't happen again...\n"
+				escreva("thus ",nome_personagem," goes back to his family and becomes an Adm of his group, so it doesn't happen again...\n")
 				u.aguarde(2000)
 				limpa()
 					
@@ -1645,114 +1720,5 @@ programa
 		
 	}
 	
-	funcao mostrar_Escolhas_Feitas()
-	{
-		se(I == 1){
-			escreva("As escolhas feitas por você foram:\n\n")
-			u.aguarde(3000)
-			
-			escreva("1-) ",nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x1)
-			u.aguarde(2000)
-			
-			escreva("\n\n2-) Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x2)
-			u.aguarde(2000)
-			
-			escreva("\n\nVocê acertou senha...\n")
-			u.aguarde(1000)
-			escreva("Senha: ")
-			u.aguarde(2000)
-			
-			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
-			u.aguarde(1000)
-			escreva("Escolha feitas: ",x3)
-			u.aguarde(2000)
-			
-			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x4)
-			u.aguarde(6000)
-			
-			
-			escreva("\n\n\nObrigado por jogar <3<3<3")
-			u.aguarde(15000)
-			limpa()
-			escolher_Idioma()
-		}
-		se(I == 2){
-			
-			escreva("The choices you made were:\n\n")
-			u.aguarde(3000)
-			
-			escreva("1-) ",nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x1)
-			u.aguarde(2000)
-			
-			escreva("\n\n2-) They decide to go at a time:\n[1]Day\n[2]Night\n")
-			u.aguarde(1000)
-			escreva("Choice made: ",x2)
-			u.aguarde(2000)
-			
-			escreva("\n\nYou got the password right...\n")
-			u.aguarde(1000)
-			escreva("Senha: ")
-			u.aguarde(2000)
-			
-			escreva("\n\n3-) ",nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
-			u.aguarde(1000)
-			escreva("Escolha feitas: ",x3)
-			u.aguarde(2000)
-			
-			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
-			u.aguarde(1000)
-			escreva("Choice made:",x4)
-			u.aguarde(6000)
-			
-			
-			escreva("\n\n\nThanks for playing <3<3<3")
-			u.aguarde(15000)
-			limpa()
-			escolher_Idioma()
-		}
-	}
-	funcao final_escrito1()
-	{
-		escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a ir, caso algo desse errado...\n")
-		escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', pedindo-lhe para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
-		escreva("Sua família foi uma das primeiras a testarem a vacina, e fala tambem que não morreram por causa da vacina, mas sim por alguma outra doença que já havia na familia a anos\n")
-		escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
-		escreva("Logo ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, os deixa irem embora, e para a polícia conta uma história, no qual somente ",nome_vilao," foi acusado de tentativa de homicídio e que criava teorias conspiratórias\n")
-		escreva("Assim ",nome_personagem," volta para sua família e se torna Adm de seu grupo...\n")
-		escreva("A verdadeira Mentira")
-		u.aguarde(15000)
-		limpa ()
-		
-		mostrar_Menu()
-	}
-	funcao final_escrito2()
-	{
-		escreva ("Assim, passando mais de 7 dias e não encontrarem nenhum resquício dos outros cientistas e do liberador da vacina, ",nome_vilao," vai a casa de ",nome_personagem)
-		escreva("E decide primeiro matar a família de ",nome_personagem," e deixa-l",letraM," ver, o sofrimento deles\n") 
-		escreva("Logo em seguida ",nome_vilao," ",letraM," elimina.")
-		u.aguarde(7000)
-		limpa ()
-		
-		mostrar_Menu()
-	}
-	funcao final_escrito3()
-	{
-		escreva("Assim, após encontrarem todos, eles dão um jeito para armar uma emboscada no trabalho dos cientistas, contando a ",nome_vilao,", ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-		escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedr para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
-		escreva("mas o número é bem baixo em relação ao número de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, fazendo com que ninguém saia vivo de lá.")
-		u.aguarde(15000)
-		limpa ()
-		
-		mostrar_Menu()
-	}
-
-
+	
 }
