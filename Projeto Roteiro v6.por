@@ -709,81 +709,7 @@ programa
 			u.aguarde(1000)	
 		}
 	}
-funcao mostrar_Escolhas_Feitas()
-	{
-		se(I == 1){
-			escreva("As escolhas feitas por você foram:\n\n")
-			u.aguarde(3000)
-			
-			escreva("1-) ",nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x1)
-			u.aguarde(2000)
-			
-			escreva("\n\n2-) Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x2)
-			u.aguarde(2000)
-			
-			escreva("\n\nVocê acertou senha...\n")
-			u.aguarde(1000)
-			escreva("Senha: ")
-			u.aguarde(2000)
-			
-			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
-			u.aguarde(1000)
-			escreva("Escolha feitas: ",x3)
-			u.aguarde(2000)
-			
-			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x4)
-			u.aguarde(6000)
-			
-			
-			escreva("\n\n\nObrigado por jogar <3<3<3")
-			u.aguarde(15000)
-			limpa()
-			escolher_Idioma()
-		}
-		se(I == 2){
-			
-			escreva("The choices you made were:\n\n")
-			u.aguarde(3000)
-			
-			escreva("1-) ",nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
-			u.aguarde(1000)
-			escreva("Escolha feita: ",x1)
-			u.aguarde(2000)
-			
-			escreva("\n\n2-) They decide to go at a time:\n[1]Day\n[2]Night\n")
-			u.aguarde(1000)
-			escreva("Choice made: ",x2)
-			u.aguarde(2000)
-			
-			escreva("\n\nYou got the password right...\n")
-			u.aguarde(1000)
-			escreva("Senha: ")
-			u.aguarde(2000)
-			
-			escreva("\n\n3-) ",nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
-			u.aguarde(1000)
-			escreva("Escolha feitas: ",x3)
-			u.aguarde(2000)
-			
-			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
-			u.aguarde(1000)
-			escreva("Choice made:",x4)
-			u.aguarde(6000)
-			
-			
-			escreva("\n\n\nThanks for playing <3<3<3")
-			u.aguarde(15000)
-			limpa()
-			escolher_Idioma()
-		}
-	}
-
+	
 	//Todos os Finais
 	funcao mostrar_Finais()
 	{
@@ -1710,5 +1636,79 @@ funcao mostrar_Escolhas_Feitas()
 			}
 		}
 		
-	}	
+	
+	funcao mostrar_Escolhas_Feitas()
+	{
+		se(I == 1){
+			escreva("As escolhas feitas por você foram:\n\n")
+			u.aguarde(3000)
+			
+			escreva("1-) ",nome_personagem," irá a reunião do A verdadeira Mentira?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("\n\n2-) Decidem ir em um horário:\n[1]Dia\n[2]Noite\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x2)
+			u.aguarde(2000)
+			
+			escreva("\n\nVocê acertou senha...\n")
+			u.aguarde(1000)
+			escreva("Senha: ")
+			u.aguarde(2000)
+			
+			escreva("\n\n3-) ",nome_personagem," vê uma pequena chance de roubar a arma\n[1]Tentar algo\n[2]Não arriscar\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva("\n\n4-) ",nome_personagem," comparecerá a esta nova reunião?\n[1]Sim\n[2]Não\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x4)
+			u.aguarde(6000)
+			
+			
+			escreva("\n\n\nObrigado por jogar <3<3<3")
+			u.aguarde(15000)
+			limpa()
+			escolher_Idioma()
+		}
+		se(I == 2){
+			
+			escreva("The choices you made were:\n\n")
+			u.aguarde(3000)
+			
+			escreva("1-) ",nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("\n\n2-) They decide to go at a time:\n[1]Day\n[2]Night\n")
+			u.aguarde(1000)
+			escreva("Choice made: ",x2)
+			u.aguarde(2000)
+			
+			escreva("\n\nYou got the password right...\n")
+			u.aguarde(1000)
+			escreva("Senha: ")
+			u.aguarde(2000)
+			
+			escreva("\n\n3-) ",nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Choice made:",x4)
+			u.aguarde(6000)
+			
+			
+			escreva("\n\n\nThanks for playing <3<3<3")
+			u.aguarde(15000)
+			limpa()
+			escolher_Idioma()
+		}
+	}
 }
