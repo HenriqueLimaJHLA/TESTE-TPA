@@ -964,42 +964,59 @@ programa
 		      u.aguarde(7000)
 		      limpa()
 				
-	              escreva("You have ",tempo," seconds to crack the riddle, before the alarm rings...")
-		      u.aguarde(8000)
-		      limpa()
-	              
-	              
-		      enquanto(tempo != -1){
-				escreva("",tempo,"\nWhen I was 30, my sister was half my age. Now that I'm 55, how old is my sister?\n")
-				u.aguarde(1000)
-				limpa()
-				tempo--
-		      }
-		      escreva("What is the password?\nTwo digits: ")
-		      leia(senha)
-		      se(senha == senhaOriginal){
-				escreva("\nAll the doors have opened")
+	              escreva("\n\t\t\t\tPreste atenção nos números que vão aparecer e sumir na tela para formar a senha: ")
+			u.aguarde(2500)
+			limpa()
+			
+			escreva("\t\t\t\t \n\n\n\t\t\t\t\t\t\t\t\t\t\t\t5")
+			u.aguarde(330)
+			limpa()
+			
+			escreva("\t\t\t\t \n\t\t\t\t3")
+			u.aguarde(330)
+			limpa()
+				
+			escreva("\t\t\t\t \n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t2")
+			u.aguarde(330)
+			limpa()
+			
+			escreva("\t\t\t\t \n\n\t\t\t\t\t\t\t\t4")
+			u.aguarde(330)
+			limpa()
+			
+			escreva("\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 1")
+			u.aguarde(320)
+			limpa()
+
+			escreva ("Digite a senha: ")
+			leia (senha)
+			limpa()
+		}
+		se(senha ==53241){
+				escreva("\nTodas as portas se abriram")
 				u.aguarde(2000)
 				limpa()
-
-                                escreva("So ", pronomeM," start getting ready to get out of there...")
+				
+				escreva("Então ",pronomeM," começam a se arrumar para sairem dali....")
 				u.aguarde(3000)
 				limpa()
 				
 				escolha3()
-			}
-			se(senha != senhaOriginal){
-				escreva("The alarm rang!!!")
+		}
+
+		senao{
+				escreva("O alarme disparou!!!")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Then they called the police, and all the members of the group were arrested...")
+				escreva("Então chamaram a polícia, e todos os integrantes do grupo foram presos...")
 				u.aguarde(3000)
 				limpa()
 				
 				game_over()
-				
-			}
+	              
+	              
+		      
 		      }
 				
 			
