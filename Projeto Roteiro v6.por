@@ -1587,14 +1587,6 @@ programa
 		}
 		
 	}
-			
-			
-		
-		se(I == 2){
-			
-		}
-		
-	}
 	
 	funcao mostrar_Escolhas_Feitas()
 	{
