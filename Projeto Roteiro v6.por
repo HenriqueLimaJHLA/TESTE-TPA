@@ -1288,42 +1288,95 @@ programa
 				u.aguarde(4500)
 				limpa()
 				
+				escreva("Após encontrarem todos os envolvidos (Cientistas e o liberador ds vacina), eles dão um jeito de armar uma emboscada num horário que não há guardas")
+				u.aguarde(3500)
+				limpa()
+				
+				escreva("Uma semana planejando, com ",nome_vilao,", supervisionando tudo")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Hora de por o plano em prática")
+				u.aguarde(1500)
+				limpa()
+				
+				escreva("Invadiram o laboratório em 5 pessoas, um deles desapareceu, provavelmente por culpa de ",nome_vilao," que devera o ter matado")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Lá estavam apenas 2 cientistas, o resto das pessoas já haviam tudo ido embora")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," sem perder tempo, já chega engatinhando sua arma")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(letra" ",nome_personagem," sem nem perder tempo")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Se joga em direção á ",nome_vilao,", com o objetivo de conversar, em vez de haver mais mortes")
+				u.aguarde(2500)
+				limpa()
 				
 				escolha5()
-				mostrar_Escolhas_Feitas()
+				
 				
 			}
 			se(x4 == 2){
 								
-				escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
+								
+				escreva(nome_personagem," foi essa, sua ultima reunião...")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Passou-se 3 semanas normalmente")
+				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
+				u.aguarde(8000)
+				limpa()
+	
+				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n")
+				u.aguarde(4500)
+				limpa()
+					
+				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo da mesma forma.")
+				u.aguarde(4500)
+				limpa()
+				
+				escreva("Após encontrarem todos os envolvidos (Cientistas e o liberador ds vacina), eles dão um jeito de armar uma emboscada num horário que não há guardas")
+				u.aguarde(3500)
+				limpa()
+				
+				escreva("Uma semana planejando, com ",nome_vilao,", supervisionando tudo")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("E foi ai que um vídeo viralizou")
-				u.aguarde(3000)
+				escreva("Hora de por o plano em prática")
+				u.aguarde(1500)
 				limpa()
 				
-				escreva("O mesmo video que ",nome_personagem," e 'seus amigos' estavam conversando sobre a vacina")
-				u.aguarde(4000)
+				escreva("Invadiram o laboratório em 5 pessoas, um deles desapareceu, provavelmente por culpa de ",nome_vilao," que devera o ter matado")
+				u.aguarde(2000)
 				limpa()
 				
-				escreva("Provavelmente ",nome_vilao," teria o publicado")
-				u.aguarde(4000)
+				escreva("Lá estavam apenas 2 cientistas, o resto das pessoas já haviam tudo ido embora")
+				u.aguarde(2000)
 				limpa()
 				
-				escreva("Foi quando bateram em sua porta\nEra a Polícia a procura d",pronomeM)
-				u.aguarde(5000)
+				escreva(nome_vilao," sem perder tempo, já chega engatinhando sua arma")
+				u.aguarde(2000)
 				limpa()
 				
-				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
-				u.aguarde(5000)
+				escreva(letra" ",nome_personagem," sem nem perder tempo")
+				u.aguarde(2000)
 				limpa()
 				
-				game_over()
+				escreva("Se joga em direção á ",nome_vilao,", com o objetivo de conversar, em vez de haver mais mortes")
+				u.aguarde(2500)
+				limpa()
+				
+				escolha5()
+				
 			}
 			senao{
 				
@@ -1354,8 +1407,9 @@ programa
 				u.aguarde(4500)
 				limpa()
 				
-				mostrar_Escolhas_Feitas()
+				
 				escolha5()
+				
 			}
 			se(x4 == 2){
 				
@@ -1386,47 +1440,8 @@ programa
 				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
 				u.aguarde(5000)
 				limpa()
-				
-				game_over()
-				
-                    se(I == 2){
-                    	
-                    
 			
-				se(x4 == 2){
-				
-				escreva(nome_personagem," preferred to risk having their video published...")
-				u.aguarde(3000)
-				limpa()
-				
-				escreva("3 weeks have passed normally")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva("And that's when a video went viral.")
-				u.aguarde(3000)
-				limpa()
-				
-				escreva("the same video as ",nome_personagem," and 'his friends' were talking about the vaccine")
-				u.aguarde(4000)
-				limpa()
-				
-				escreva("Probably ",nome_vilao," would have published it")
-				u.aguarde(4000)
-				limpa()
-				
-				escreva("That's when there was a knock on his door\nIt was the police looking for him.",pronomeM)
-				u.aguarde(5000)
-				limpa()
-				
-				escreva(nome_personagem," was arrested, and sentenced to 30 years in prison...")
-				u.aguarde(5000)
-				limpa()
-				
-				game_over()
-				}
-                    }
-				
+				mostrar_Escolhas_Feitas()
 				
 			}
 			senao{
