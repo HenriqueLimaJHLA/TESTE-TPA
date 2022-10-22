@@ -1518,16 +1518,74 @@ programa
 			}
 			se(x5 == 2){
 				
-				escreva("Fazendo")
+				escreva("Você achou melhor falar com o cientista...")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Pedindo-lhe para explicar sobre a vacina")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("O homem reconhece ",nome_vilao," e sua familia de uma reportagem \n")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Haviam sido as primeiras pessoas a testarem a vacina, e conta tambem que não morreram por causa da vacina")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Mas sim por alguma outra doença que já era passada por gerações")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," então se lembra que sua sogra teria contado algo assim")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Agora se sentindo muito mal por ter matado, sem nenhum motivo")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Morre ",nome_vilao)
+				u.aguarde(1500)
+				limpa()
+				
+				escreva("Motivo: Suicídio")
+				u.aguarde(1000)
+				limpa()
+				
+				escreva("Logo ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, os deixa irem embora, e para a polícia conta uma história, no qual somente ",nome_vilao," foi acusado de tentativa de homicídio e que criava teorias conspiratórias\n")
+				escreva("Assim ",nome_personagem," volta para sua família e se torna Adm de seu grupo...\n")
+				escreva("A verdadeira Mentira")
 			
 				
 				
 			}
-			
+			senao{
+				
+				mostrar_Erro_Escolha5()
+			}
 			
 		}
 		se(I == 2){
-			escreva("Fazendo")
+			se(x5 == 1){
+					
+			}
+			se(x5 == 2){
+					
+			}
+			senao{
+				
+				mostrar_Erro_Escolha5()	
+			}
+		}
+		
+	}
+			
+			
+		
+		se(I == 2){
+			
 		}
 		
 	}
