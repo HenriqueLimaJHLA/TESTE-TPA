@@ -1385,6 +1385,39 @@ programa
 				escreva("In a week at most, if more than that, ",nome_vilao," would publish the video in the same way.")
 				u.aguarde(4500)
 				limpa()
+
+                    escreva("After finding everyone involved (Scientists and the vaccine releaser), they find a way to set an ambush at a time when there are no guards.")
+				u.aguarde(7500)
+				limpa()
+				
+				escreva("A week of planning, with",nome_vilao,", overseeing everything")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("Time to put the plan into action")
+				u.aguarde(1500)
+				limpa()
+				
+				escreva("They invaded the laboratory in 5 people, one of them disappeared, probably because of ",nome_vilao," that should have killed him")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("There were only 2 scientists, the rest of the people were already gone")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(nome_vilao," without wasting time, it's enough crawling your weapon")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva(letra," ",nome_personagem," without wasting time")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("If you play towards ",nome_vilao,", for the purpose of talking, instead of having more deaths")
+				u.aguarde(2500)
+				limpa()
+				
 				
 				
 				escolha5()
@@ -1427,6 +1460,47 @@ programa
 				
 				mostrar_Erro_Escolha4()
 			}
+			se(I == 2){
+				
+			se(x4 == 2){
+				
+				escreva(nome_personagem,"preferred to risk having their video published...")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("It's been 3 weeks normally")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("And that's when a video went viral.")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("the same video as ",nome_personagem," nd 'his friends' were talking about the vaccine")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Probably ",nome_vilao," would have published it")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("That's when there was a knock on his door\nIt was the police looking for him.",pronomeM)
+				u.aguarde(5000)
+				limpa()
+				
+				escreva(nome_personagem," was arrested, and sentenced to 30 years in prison...")
+				u.aguarde(5000)
+				limpa()
+			
+				mostrar_Escolhas_Feitas()
+				
+			}
+			senao{
+				
+				mostrar_Erro_Escolha4()
+			}	
+			     	}
+			
 		}
 	}
 	funcao escolha5()
