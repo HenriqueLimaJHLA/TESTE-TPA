@@ -1326,57 +1326,36 @@ programa
 			}
 			se(x4 == 2){
 								
-								
-				escreva(nome_personagem," foi essa, sua ultima reunião...")
+			escreva(nome_personagem," preferiu arriscar que publicassem seu video...")
+				
+                                u.aguarde(3000)
+				limpa()
+				
+				escreva("Passou-se 3 semanas normalmente")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("E foi ai que um vídeo viralizou")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Com muito medo de publicarem, ",pronomeM," vai ao local, onde ",nome_vilao," ",letraM," esperava")
-				u.aguarde(8000)
-				limpa()
-	
-				escreva("Após ouvir um novo plano, ",pronomeM,"s são obrigados a encontrarem os outros 3 cientistas e o homem que liberou o uso da vacina,\n")
-				u.aguarde(4500)
-				limpa()
-					
-				escreva("Em uma semana no máximo, caso passasse disso, ",nome_vilao," publicaria o vídeo da mesma forma.")
-				u.aguarde(4500)
+				escreva("O mesmo video que ",nome_personagem," e 'seus amigos' estavam conversando sobre a vacina")
+				u.aguarde(4000)
 				limpa()
 				
-				escreva("Após encontrarem todos os envolvidos (Cientistas e o liberador ds vacina), eles dão um jeito de armar uma emboscada num horário que não há guardas")
-				u.aguarde(3500)
+				escreva("Provavelmente ",nome_vilao," teria o publicado")
+				u.aguarde(4000)
 				limpa()
 				
-				escreva("Uma semana planejando, com ",nome_vilao,", supervisionando tudo")
-				u.aguarde(2000)
+				escreva("Foi quando bateram em sua porta\nEra a Polícia a procura d",pronomeM)
+				u.aguarde(5000)
 				limpa()
 				
-				escreva("Hora de por o plano em prática")
-				u.aguarde(1500)
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				u.aguarde(5000)
 				limpa()
 				
-				escreva("Invadiram o laboratório em 5 pessoas, um deles desapareceu, provavelmente por culpa de ",nome_vilao," que devera o ter matado")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva("Lá estavam apenas 2 cientistas, o resto das pessoas já haviam tudo ido embora")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva(nome_vilao," sem perder tempo, já chega engatinhando sua arma")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva(letra" ",nome_personagem," sem nem perder tempo")
-				u.aguarde(2000)
-				limpa()
-				
-				escreva("Se joga em direção á ",nome_vilao,", com o objetivo de conversar, em vez de haver mais mortes")
-				u.aguarde(2500)
-				limpa()
-				
-				escolha5()
-				
+				mostrar_Escolhas_Feitas()
 			}
 			senao{
 				
