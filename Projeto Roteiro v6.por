@@ -962,7 +962,7 @@ programa
 		      u.aguarde(7000)
 		      limpa()
 				
-	              escreva("\n\t\t\t\tPreste atenção nos números que vão aparecer e sumir na tela para formar a senha: ")
+	              escreva("\n\t\t\t\tPay attention to the numbers that will appear and disappear on the screen to form the password:")
 			u.aguarde(2500)
 			limpa()
 			
@@ -986,16 +986,16 @@ programa
 			u.aguarde(320)
 			limpa()
 
-			escreva ("Digite a senha: ")
+			escreva ("Type the password: ")
 			leia (senha)
 			limpa()
 		}
 		se(senha ==53241){
-				escreva("\nTodas as portas se abriram")
+				escreva("\nAll the doors have opened")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Então ",pronomeM," começam a se arrumar para sairem dali....")
+				escreva("Then ",pronomeM," They start getting ready to get out of there....")
 				u.aguarde(3000)
 				limpa()
 				
@@ -1003,11 +1003,11 @@ programa
 		}
 
 		senao{
-				escreva("O alarme disparou!!!")
+				escreva("The alarm rang!!!")
 				u.aguarde(3000)
 				limpa()
 				
-				escreva("Então chamaram a polícia, e todos os integrantes do grupo foram presos...")
+				escreva("So they called the police, and all the members of the group were arrested...")
 				u.aguarde(3000)
 				limpa()
 				
