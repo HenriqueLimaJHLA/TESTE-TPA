@@ -1518,7 +1518,7 @@ programa
 			}
 			se(x5 == 2){
 				
-				escreva("Você achou melhor falar com o cientista...")
+				 escreva("Você achou melhor falar com o cientista...")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1554,12 +1554,18 @@ programa
 				u.aguarde(1000)
 				limpa()
 				
-				escreva("Logo ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, os deixa irem embora, e para a polícia conta uma história, no qual somente ",nome_vilao," foi acusado de tentativa de homicídio e que criava teorias conspiratórias\n")
-				escreva("Assim ",nome_personagem," volta para sua família e se torna Adm de seu grupo...\n")
-				escreva("A verdadeira Mentira")
-			
+				escreva("Logo ",nome_personagem," explica tudo que havia acontecido ao cientista, ele entendendo, os deixa ir embora")
+				u.aguarde(2500)
+				limpa()
 				
+				escreva("Depois contando a polícia, que somente ",nome_vilao," era culpado de invasão, de teorias conspiratórias\nE tentativa de homicídio")
+				u.aguarde(2000)
+				limpa()
 				
+				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
+				u.aguarde(2000)
+				limpa()
+					
 			}
 			senao{
 				
