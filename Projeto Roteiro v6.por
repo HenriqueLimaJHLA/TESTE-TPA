@@ -722,13 +722,8 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-				escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
-				escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
-				escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
-				escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
-				escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
-				u.aguarde(15000)
+				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
+				u.aguarde(5000)
 				limpa ()
 				mostrar_Finais()
 			
@@ -736,19 +731,14 @@ programa
 			se (final ==2){
 				nome_nos_finais()
 				
-				escreva ("Assim, passando mais de uma semana e encontram apenas os cientistas e não o liberador da vacina, a ",nome_vilao," decide primeiro matar a família de ",nome_personagem," e deixa-lo ver,\n") 
-				escreva("e depois ",nome_vilao," mata ele.")
-				u.aguarde(7000)
+				u.aguarde(5000)
 				limpa ()
 				mostrar_Finais()
 			}
 			se (final==3){
 				nome_nos_finais()
-				
-				escreva("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho dos cientistas, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-				escreva(nome_personagem," entra na frente no momento no qual a mulher vai matá-los, e pedi para explicar sobre a vacina, eles explicam que a vacina está protegendo de um vírus real, e que descobriram que algumas pessoas tem complicações,\n")
-				escreva("mas o número é bem baixo se ver o lado de pessoas que estão sendo protegidas ou curadas desse novo vírus, ",nome_vilao," entendendo que fez tudo isso por nada, começa a atirar em todos na sala, assim acabando que ninguém saiu vivo de lá.")
-				u.aguarde(15000)
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				u.aguarde(5000)
 				limpa ()
 				mostrar_Finais()
 }
@@ -768,13 +758,8 @@ programa
 			se (final ==1) {
 				nome_nos_finais()
 				
-				escreva ("Assim, após encontrarem todos, eles dão um jeito para armar a emboscada no trabalho do liberador da vacina, assim contam a ",nome_vilao,", e ",nome_personagem," e o resto do grupo é obrigado a irem juntos, caso algo desse errado...\n")
-				escreva ("Então ",nome_personagem," entra na frente no momento no qual ",nome_vilao," vai matar esse tal 'liberador', assim pede para explicar sobre a vacina, o homem reconhece ",nome_vilao," do jornal, \n")
-				escreva("No qual sua família foi uma das primeiras a testarem a vacina, e conta que não morreram por causa da vacina, mas sim por alguma outra doença que havia já na familia,\n")
-				escreva(nome_vilao," muito mal por ter matado o outro cientista e a família dele por nada, decide se matar, então ",nome_vilao," se mata,\n") 
-				escreva("Então ",nome_personagem," explica tudo que havia acontecido ao homem, ele entendendo seu lado, deixa eles irem embora, e a polícia diz outra história, no qual somente ",nome_vilao," era o único participante.\n")
-				escreva("Assim ",nome_personagem," volta para sua família e vive bem até hoje")
-				u.aguarde(15000)
+				escreva("Assim ",nome_personagem," volta para sua família e se torna um Adm de seu grupo, para isso tudo não se repetir mais...\n")
+				u.aguarde(5000)
 				limpa ()
 				
 				mostrar_Finais()
@@ -789,7 +774,9 @@ programa
 			se (final==3){
 				nome_nos_finais()
 				
-				
+				escreva(nome_personagem," foi preso, e condenado a 30 anos de prisão...")
+				u.aguarde(5000)
+				limpa ()
 				
 				mostrar_Finais()
 			}
