@@ -1312,7 +1312,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva(letra" ",nome_personagem," sem nem perder tempo")
+				escreva(letra," ",nome_personagem," sem nem perder tempo")
 				u.aguarde(2000)
 				limpa()
 				
