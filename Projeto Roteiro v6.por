@@ -895,9 +895,7 @@ programa
 	}
 	funcao senha_charada()
 	{
-		inteiro tempo = 30
-		inteiro senhaOriginal
-		inteiro idade = 50
+		
 		inteiro senha=53241 
 		
 		
