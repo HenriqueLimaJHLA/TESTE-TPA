@@ -767,8 +767,9 @@ programa
 			}
 			se (final ==2){
 				nome_nos_finais()
-				
-				
+				escreva("And ",nome_vilao," dies too...")
+				u.aguarde(5000)
+				limpa ()
 				mostrar_Finais()
 			}
 			se (final==3){
@@ -1575,56 +1576,56 @@ programa
 			
 		}
 		se(I == 2){
-				escreva("Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				escreva("Chat with:\n[1]",nome_vilao,"\n[2]Scientist\n")
 				leia(x5)
 				variavel = 1	
 				
 			se(x5 == 1){
-				escreva("Você achou melhor falar com ",nome_vilao,"...")
+				escreva("You thought it best to talk to ",nome_vilao,"...")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva(nome_personagem," pergunta o porque de achar que a Vingança\nE o melhor caminho")
+				escreva(nome_personagem," asks why you think Revenge\nIs the best way")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Como resposta ",nome_vilao," diz que desde quando era criança")
+				escreva("in answer",nome_vilao," says that since he was a child")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Aprendeu que na vida sempre foi olho por olho e dente por dente")
+				escreva("Learned that in life it was always an eye for an eye and a tooth for a tooth")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("E que ao perder sua família, perdeu sua estrutura")
+				escreva("And that by losing your family, you lost your structure")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("E sendo assim não teriam mais o direito de viver")
+				escreva("And if so, they would no longer have the right to live.")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Enquanto os dois conversavam, o outro cientista chamou a policia")
+				escreva("While the two were talking, the other scientist called the police.")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Agora com a polícia já invadindo o local")
+				escreva("Now with the police already invading the place")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva(nome_vilao," não vê alternativas, e mata ",nome_personagem," com um tiro na cabeça")
+				escreva(nome_vilao," sees no alternatives, and kills",nome_personagem,"with a shot to the head")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("E ainda consegue disparar mais vezes, numa dessas consegue acertar o braço do cientista")
+				escreva("And he still manages to shoot more times, in one of those he manages to hit the scientist's arma")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Mas a Polícia já chega revidando, para que ",nome_vilao," não faça mais vítimas")
+				escreva("But the police are already fighting back, so that ",nome_vilao," don't make more victims")
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("E ",nome_vilao," morre também...")
+				escreva("And",nome_vilao," dies too...")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1762,10 +1763,10 @@ programa
 			u.aguarde(5000)
 			
 			se(variavel == 1){
-				escreva("\n\n5-) Conversar com: \n[1]",nome_vilao,"\n[2]Cientista\n")
+				escreva("\n\n5-)Talk to: \n[1]",nome_vilao,"\n[2]Scientist\n")
 				u.aguarde(1000)
-				escreva("Escolha feita: ",x5)
-				u.aguarde(5000)
+				escreva("choice made: ",x5)
+				u.aguarde(4000)
 			}
 			
 			escreva("\n\n\nThanks for playing <3<3<3")
