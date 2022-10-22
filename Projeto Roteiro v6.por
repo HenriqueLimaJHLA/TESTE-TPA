@@ -1389,6 +1389,45 @@ programa
 				
 				game_over()
 				
+                    se(I == 2){
+                    	
+                    
+			
+				se(x4 == 2){
+				
+				escreva(nome_personagem," preferred to risk having their video published...")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("3 weeks have passed normally")
+				u.aguarde(2000)
+				limpa()
+				
+				escreva("And that's when a video went viral.")
+				u.aguarde(3000)
+				limpa()
+				
+				escreva("the same video as ",nome_personagem," and 'his friends' were talking about the vaccine")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Probably ",nome_vilao," would have published it")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("That's when there was a knock on his door\nIt was the police looking for him.",pronomeM)
+				u.aguarde(5000)
+				limpa()
+				
+				escreva(nome_personagem," was arrested, and sentenced to 30 years in prison...")
+				u.aguarde(5000)
+				limpa()
+				
+				game_over()
+				}
+                    }
+				
+				
 			}
 			senao{
 				
@@ -1450,7 +1489,39 @@ programa
 		}
 		se(I == 2){
 			
-			escreva("")
+			escreva("The choices you made were:\n\n")
+			u.aguarde(3000)
+			
+			escreva("1-) ",nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Escolha feita: ",x1)
+			u.aguarde(2000)
+			
+			escreva("\n\n2-) They decide to go at a time:\n[1]Day\n[2]Night\n")
+			u.aguarde(1000)
+			escreva("Choice made: ",x2)
+			u.aguarde(2000)
+			
+			escreva("\n\nYou got the password right...\n")
+			u.aguarde(1000)
+			escreva("Senha: ")
+			u.aguarde(2000)
+			
+			escreva("\n\n3-) ",nome_personagem," sees a small chance to steal the weapon\n[1]Try something\n[2]Don't risk it\n")
+			u.aguarde(1000)
+			escreva("Escolha feitas: ",x3)
+			u.aguarde(2000)
+			
+			escreva("\n\n4-) ",nome_personagem," Will you attend this new meeting?\n[1]Yes\n[2]No\n")
+			u.aguarde(1000)
+			escreva("Choice made:",x4)
+			u.aguarde(6000)
+			
+			
+			escreva("\n\n\nThanks for playing <3<3<3")
+			u.aguarde(15000)
+			limpa()
+			escolher_Idioma()
 		}
 	}
 	funcao final_escrito1()
