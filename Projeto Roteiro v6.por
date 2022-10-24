@@ -926,7 +926,7 @@ programa
 			escreva ("Digite a senha: ")
 			leia (senha)
 			limpa()
-		}
+		
 		se(senha ==53241){
 				escreva("\nTodas as portas se abriram")
 				u.aguarde(2000)
@@ -950,7 +950,7 @@ programa
 				
 				game_over()	
 			}
-	
+	     }
              se(I == 2){
 		      escreva("The house went into safe mode and closed all doors and windows")
 		      u.aguarde(7000)
@@ -983,7 +983,7 @@ programa
 			escreva ("Type the password: ")
 			leia (senha)
 			limpa()
-		}
+		
 		se(senha ==53241){
 				escreva("\nAll the doors have opened")
 				u.aguarde(2000)
@@ -1010,7 +1010,7 @@ programa
 	              
 		      
 		      }
-				
+		}	
 			
 		
 	}
