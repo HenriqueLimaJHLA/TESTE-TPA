@@ -850,8 +850,9 @@ programa
 	        escreva(nome_personagem," will the meeting of The True Lie?\n[1]Yes\n[2]No\n")
                 leia(x1)
                 limpa()
+				
                 se(x1 == 1){
-                                escreva("You chose to go to the group The Truth Lies...")
+                escreva("You chose to go to the group The Truth Lies...")
 				u.aguarde(4000)
 				limpa()
 
@@ -1086,6 +1087,8 @@ programa
 		}
 		se(I == 2){
 			escreva("Decide to go at a time:\n[1]Day\n[2]Night\n")
+			u.aguarde(300)
+			escreva("\nRemembering that security guards don't work at night...\n")
 			leia(x2)
 			limpa()
 			
@@ -1095,39 +1098,50 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("Arriving at this house, the scientist and his family surrender, and one of the people he helped to plan the plan, pulls out a pistol and shoots towards the scientist,\n")
-				u.aguarde(5000)
-				limpa()
-				
-				escreva("Hitting him. Now everyone in shock, becomes immobile and not knowing what to do")
+				escreva("They arrived at the house and broke into it")
 				u.aguarde(3000)
 				limpa()
 				
-				
-				escreva("Thus ",nome_vilao," finishes the scientist and his family in a single burst\n")
-				u.aguarde(5000)
+				escreva(pronome,"s are peg",letraM,"s by the scientist's security")
+				u.aguarde(2000)
 				limpa()
-					
-				escreva(nome_vilao," is reloading weapon")
+				
+				escreva("So he calls the police and they are all arrested...")
 				u.aguarde(3000)
 				limpa()
 				
-				escolha3()
+				game_over()
 				
 					
 			}
 			se(x2 == 2){
-				escreva("Decided to go during at night:\n")
+				escreva("Decided to go at night:\n")
 				u.aguarde(2000)
 				limpa()
-
-				escreva("They arrived at the house and invaded more")
+				
+				escreva ("Arriving at this house, the scientist and his family surrender, and one of the people he helped to plan the plan, pulls out a pistol and shoots towards the scientist,\n")
+				u.aguarde(5000)
+				limpa()
+					
+				escreva("Hitting him. Now everyone in shock, becomes immobile and not knowing what to do")
+				u.aguarde(4000)
+				limpa()
+				
+				escreva("Thus ",nome_vilao," ends the scientist and his family in a flurry of gunfire\n")
+				u.aguarde(5000)
+				limpa()
+				
+				escreva("But before she died the woman activated the house's alarm system\n")
+				u.aguarde(5000)
+				limpa()
+				
+				senha_charada()
+				
+				escreva(nome_vilao," then reload your weapon")
 				u.aguarde(3000)
 				limpa()
-
-				escreva("The group was discovered by ",nome_vilao," so he arrested the group The Truth lie." )
-				u.aguarde(9000)
-				limpa()
+				
+				escolha3()
 				
 			}
 			senao{
@@ -1593,7 +1607,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("in answer",nome_vilao," says that since he was a child")
+				escreva("in answer ",nome_vilao," says that since he was a child")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1617,7 +1631,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva(nome_vilao," sees no alternatives, and kills",nome_personagem,"with a shot to the head")
+				escreva(nome_vilao," sees no alternatives, and kills ",nome_personagem," with a shot to the head")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1629,7 +1643,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("And",nome_vilao," dies too...")
+				escreva("And ",nome_vilao," dies too...")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1644,7 +1658,7 @@ programa
 				u.aguarde(2000)
 				limpa()
 				
-				escreva("man recognizes",nome_vilao," and his family from a reportage\n")
+				escreva("man recognizes ",nome_vilao," and his family from a reportage\n")
 				u.aguarde(2000)
 				limpa()
 				
@@ -1769,7 +1783,7 @@ programa
 			se(variavel == 1){
 				escreva("\n\n5-)Talk to: \n[1]",nome_vilao,"\n[2]Scientist\n")
 				u.aguarde(1000)
-				escreva("choice made: ",x5)
+				escreva("choice made : ",x5)
 				u.aguarde(4000)
 			}
 			
